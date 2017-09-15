@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: compute
-ms.openlocfilehash: c25665e19adb44c7112bf1533097ce1e6c739cb8
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: e2f2ad4e42bd847c9286333bacd583c3cd3f1b8c
+ms.sourcegitcommit: 79afc8a1b427e26ecea7bdc0b7b3c898f143360f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="azure-virtual-machine-libraries"></a>Bibliotecas de Azure Virtual Machines
 
@@ -37,7 +37,7 @@ pip install azure-mgmt-compute
 
 ### <a name="example"></a>Ejemplo
 
-Cree una nueva máquina virtual Linux en un grupo de recursos de Azure existente.
+Cree una nueva máquina virtual Linux en un grupo de recursos de Azure existente con la autenticación de Managed Service Identity (MSI).
 
 ```python
 VM_PARAMETERS={
@@ -76,15 +76,17 @@ def create_vm()
 ## <a name="samples"></a>Muestras
 
 * [Administración de máquinas virtuales][1]
-* [Administración de un equilibrador de carga][2]
-* [Creación y configuración de discos administrados][3]
-* [Lista de imágenes][4] 
-* [Supervisión de máquinas virtuales][5]
+* [Autenticación con Managed Service Identity ][2]
+* [Administración de un equilibrador de carga][3]
+* [Creación y configuración de discos administrados][4]
+* [Lista de imágenes][5] 
+* [Supervisión de máquinas virtuales][6]
 
 Ver el [lista completa](https://azure.microsoft.com/resources/samples/?platform=python&term=virtual-machines) de ejemplos de máquina virtual.
 
 [1]: https://azure.microsoft.com/resources/samples/virtual-machines-python-manage/
-[2]: https://azure.microsoft.com/resources/samples/network-python-manage-loadbalancer
-[3]: ../docs-ref-conceptual/python-sdk-azure-samples-managed-disks.md
-[4]: ../docs-ref-conceptual/python-sdk-azure-samples-list-images.md
-[5]: ../docs-ref-conceptual/python-sdk-azure-samples-monitor-vms.md
+[2]: https://github.com/Azure-Samples/resource-manager-python-manage-resources-with-msi
+[3]: https://azure.microsoft.com/resources/samples/network-python-manage-loadbalancer
+[4]: ../docs-ref-conceptual/python-sdk-azure-samples-managed-disks.md
+[5]: ../docs-ref-conceptual/python-sdk-azure-samples-list-images.md
+[6]: ../docs-ref-conceptual/python-sdk-azure-samples-monitor-vms.md

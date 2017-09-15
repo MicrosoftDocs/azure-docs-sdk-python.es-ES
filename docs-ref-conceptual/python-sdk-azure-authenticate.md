@@ -11,11 +11,11 @@ ms.technology: azure
 ms.devlang: python
 ms.service: multiple
 ms.assetid: 
-ms.openlocfilehash: 1dba0bdd9b543c11b31f3001737038e7e99daf08
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 000397b573700aa92572a6252b6d84da8945a1e5
+ms.sourcegitcommit: 79afc8a1b427e26ecea7bdc0b7b3c898f143360f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="authenticate-with-the-azure-management-libraries-for-python"></a>Autenticación con las bibliotecas de administración de Azure para Python
 
@@ -52,7 +52,7 @@ En el ejemplo siguiente se usa una [entidad de servicio](https://docs.microsoft.
     )
 ```
 
-> [Nota] Para conectarse a una de las nubes soberanas de Azure, use el parámetro `cloud_environment`.
+> [NOTA] Para conectarse a una de las nubes soberanas de Azure, use el parámetro `cloud_environment`.
 
 ```python
     from azure.common.credentials import ServicePrincipalCredentials
@@ -116,11 +116,12 @@ subscription_id = '33333333-3333-3333-3333-333333333333'
 client = ComputeManagementClient(credentials, subscription_id)
 ```
 
-> [Nota] Cuando se usa una nube soberana de Azure, debe especificar también la dirección URL base apropiada (mediante las constantes de `msrestazure.azure_cloud`) al crear el cliente de administración. Por ejemplo, para la nube de China de Azure:
+> [NOTA] Cuando se usa una nube soberana de Azure, debe especificar también la dirección URL base apropiada (mediante las constantes de `msrestazure.azure_cloud`) al crear el cliente de administración. Por ejemplo, para la nube de China de Azure:
 > ```python
 > client = ComputeManagementClient(credentials, subscription_id,
 >     base_url=AZURE_CHINA_CLOUD.endpoints.active_directory_resource_id)
 > ```
+
 
 ## <a name="mgmt-auth-file"></a>Autenticación basada en archivos
 
@@ -161,6 +162,31 @@ from azure.mgmt.compute import ComputeManagementClient
 client = get_client_from_auth_file(ComputeManagementClient)
 ```
 
+## <a name="mgmt-auth-msi"></a>Autenticación con Managed Service Identity (MSI) 
+MSI es una manera sencilla para que un recurso de Azure pueda usar el SDK o la CLI sin necesidad de crear credenciales específicas.
+
+```python
+from msrestazure.azure_active_directory import MSIAuthentication
+from azure.mgmt.resource import ResourceManagementClient, SubscriptionClient
+
+    # Create MSI Authentication
+    credentials = MSIAuthentication()
+
+
+    # Create a Subscription Client
+    subscription_client = SubscriptionClient(credentials)
+    subscription = next(subscription_client.subscriptions.list())
+    subscription_id = subscription.subscription_id
+
+    # Create a Resource Management client
+    resource_client = ResourceManagementClient(credentials, subscription_id)
+
+    
+    # List resource groups as an example. The only limit is what role and policy are assigned to this MSI token.
+    for resource_group in resource_client.resource_groups.list():
+        print(resource_group.name)
+
+```
 
 ## <a name="mgmt-auth-cli"></a>Autenticación basada en la CLI
 
