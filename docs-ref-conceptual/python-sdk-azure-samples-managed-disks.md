@@ -10,11 +10,11 @@ ms.service: Azure
 ms.technology: Azure
 ms.date: 6/15/2017
 ms.author: liwong
-ms.openlocfilehash: ca1af18ae37549238ffaafbd2d5f8223974e0d11
-ms.sourcegitcommit: 12ea38af93cc4f1ba6aac333035829a69f6aed0c
+ms.openlocfilehash: 1dceb1b2fe700904b530f1834f0338f7d5e61999
+ms.sourcegitcommit: 3e477d608bbb41f0c561c88e4c665013e3008c26
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="managed-disks"></a>Managed Disks
 
@@ -129,7 +129,7 @@ async_update.wait()
 
 ## <a name="virtual-machine-scale-sets-with-managed-disks"></a>Conjuntos de escalado de máquinas virtuales con discos administrados
 
-Antes de los discos administrados, había que crear manualmente una cuenta de almacenamiento para todas las máquinas virtuales que quería dentro del conjunto de escalado y, a continuación, usar el parámetro de lista ``vhd_containers`` para proporcionar el nombre de todas las cuentas de almacenamiento a la API de REST del conjunto de escalado. La guía de transición oficial está disponible en este artículo `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`__.
+Antes de los discos administrados, había que crear manualmente una cuenta de almacenamiento para todas las máquinas virtuales que quería dentro del conjunto de escalado y, a continuación, usar el parámetro de lista ``vhd_containers`` para proporcionar el nombre de todas las cuentas de almacenamiento a la API de REST del conjunto de escalado. La guía de transición oficial está disponible en este artículo `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`.
 
 Ahora, con los discos administrados, no es necesario administrar ninguna cuenta de almacenamiento. Si está acostumbrado al SDK de VMSS para Python, su ``storage_profile`` puede ser exactamente el mismo que el que se usó para crear las máquinas virtuales:
 
