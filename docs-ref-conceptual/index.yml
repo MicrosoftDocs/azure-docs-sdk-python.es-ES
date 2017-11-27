@@ -60,9 +60,9 @@ sections:
             title: Implementación de su primera aplicación web en Azure
             href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-python'
           - image:
-              src: 'https://docs.microsoft.com/azure/media/index/PostgreSQL.svg'
-            title: Conecte su aplicación Azure PostgreSQL Database
-            href: 'https://docs.microsoft.com/azure/postgresql/connect-python'
+              src: 'https://docs.microsoft.com/azure/media/index/API_Face.svg'
+            title: Introducción a Face API
+            href: 'https://docs.microsoft.com/azure/cognitive-services/face/tutorials/faceapiinpythontutorial'
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/cosmosdb.svg'
             title: Creación de una aplicación web con Cosmos DB
