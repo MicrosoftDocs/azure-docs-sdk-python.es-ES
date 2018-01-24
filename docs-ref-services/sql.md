@@ -1,64 +1,77 @@
 ---
 title: Bibliotecas Azure SQL Database para Python
-description: 
-keywords: Azure, Python, SDK, API, SQL, Database, pyodbc
+description: "Conecte con Azure SQL Database mediante el controlador ODBC y pyodbc o administre las instancias de Azure SQL con la API de administración."
 author: lisawong19
 ms.author: liwong
-manager: douge
-ms.date: 07/11/2017
-ms.topic: article
-ms.prod: azure
-ms.technology: azure
+manager: routlaw
+ms.date: 01/09/2018
+ms.topic: reference
 ms.devlang: python
 ms.service: sql-database
-ms.openlocfilehash: b580c5011412bc77fd8fd55b709a305be07e2316
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: baa0e53a77d18dc93241135b5b0fecff5786114c
+ms.sourcegitcommit: ab96bcebe9d5bfa5f32ec5a61b79bd7483fadcad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="azure-sql-database-libraries-for-python"></a>Bibliotecas Azure SQL Database para Python
 
 ## <a name="overview"></a>Información general
 
-Trabaje con datos almacenados en [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) desde Python con el controlador ODBC de Microsoft y pyodbc. 
+Trabaje con datos almacenados en [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) desde Python con el [controlador de base de datos de ODBC](https://github.com/mkleehammer/pyodbc/wiki/Drivers-and-Driver-Managers) de pyodbc. Consulte nuestra [guía de inicio rápido](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python) sobre la conexión a una base de datos SQL de Azure y el uso de instrucciones Transact-SQL para consultar los datos y comenzar el [ejemplo](https://github.com/mkleehammer/pyodbc/wiki/Getting-started) con pyodbc.
 
-## <a name="client-odbc-driver-and-pyodbc"></a>Controlador ODBC de cliente y pyodbc
+## <a name="install-odbc-driver-and-pyodbc"></a>Instalación del controlador ODBC y pyodbc
 
 ```bash
 pip install pyodbc
 ```
-Pueden encontrar más detalles acerca de cómo instalar las bibliotecas de comunicación de python y base de datos [aquí](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries).
+Puede encontrar [aquí](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries) más información sobre cómo instalar las bibliotecas de comunicación de python y base de datos.
 
-### <a name="example"></a>Ejemplo
+## <a name="connect-and-execute-a-sql-query"></a>Conexión y ejecución de una consulta SQL
 
-Conéctese a una base de datos SQL y seleccione todos los registros de una tabla.
+### <a name="connect-to-a-sql-database"></a>Conexión a una base de datos SQL
 
 ```python
-import pyodbc 
+import pyodbc
 
-SERVER = 'YOUR_SERVER_NAME.database.windows.net'
-DATABASE = 'YOUR_DATABASE_NAME'
-USERNAME = 'YOUR_DB_USERNAME'
-PASSWORD = 'YOUR_DB_PASSWORD'
+server = 'your_server.database.windows.net'
+database = 'your_database'
+username = 'your_username'
+password = 'your_password'
+driver= '{ODBC Driver 13 for SQL Server}'
 
-DRIVER= '{ODBC Driver 13 for SQL Server}'
-cnxn = pyodbc.connect('DRIVER=' + DRIVER + ';PORT=1433;SERVER=' + SERVER +
-    ';PORT=1443;DATABASE=' + DATABASE + ';UID=' + USERNAME + ';PWD=' + PASSWORD)
+cnxn = pyodbc.connect('DRIVER='+driver+';PORT=1433;SERVER='+server+';PORT=1443;DATABASE='+database+';UID='+username+';PWD='+ password)
 cursor = cnxn.cursor()
-selectsql = "SELECT * FROM SALES"  # SALES is an example table name
-cursor.execute(selectsql)
 ```
 
-## <a name="management-api"></a>API de administración
+### <a name="execute-a-sql-query"></a>Ejecución de una consulta SQL
+
+```python
+cursor.execute("SELECT TOP 20 pc.Name as CategoryName, p.name as ProductName FROM [SalesLT].[ProductCategory] pc JOIN [SalesLT].[Product] p ON pc.productcategoryid = p.productcategoryid")
+row = cursor.fetchone()
+while row:
+    print (str(row[0]) + " " + str(row[1]))
+    row = cursor.fetchone()
+```
+
+> [!div class="nextstepaction"]
+> [ejemplo de pyodbc](https://github.com/mkleehammer/pyodbc/wiki/Getting-started)
+
+## <a name="connecting-to-orms"></a>Conexión a ORM
+
+pyodbc funciona con otros ORM como [SQLAlchemy](http://docs.sqlalchemy.org/en/latest/dialects/mssql.html?highlight=pyodbc#module-sqlalchemy.dialects.mssql.pyodbc) y [Django](https://github.com/lionheart/django-pyodbc/). 
+
+## <a name="management-apipythonapioverviewazuresqlmanagementlibrary"></a>[API de administración](/python/api/overview/azure/sql/managementlibrary)
 
 Cree y administre los recursos de Azure SQL Database de la suscripción con la API de administración. 
 
 ```bash
+pip install azure-common
 pip install azure-mgmt-sql
+pip install azure-mgmt-resource
 ```
 
-### <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo
 
 Cree un recurso de SQL Database y restrinja el acceso a un intervalo de direcciones IP mediante una regla de firewall.
 
@@ -66,6 +79,13 @@ Cree un recurso de SQL Database y restrinja el acceso a un intervalo de direccio
 RESOURCE_GROUP = 'YOUR_RESOURCE_GROUP_NAME'
 LOCATION = 'eastus'  # example Azure availability zone, should match resource group
 SQL_DB = 'YOUR_SQLDB_NAME'
+
+# create resource client
+resource_client = get_client_from_cli_profile(ResourceManagementClient)
+# create resource group
+resource_client.resource_groups.create_or_update(RESOURCE_GROUP, {'location': LOCATION})
+
+sql_client = get_client_from_cli_profile(SqlManagementClient)
 
 # Create a SQL server
 server = sql_client.servers.create_or_update(
@@ -91,12 +111,3 @@ firewall_rule = sql_client.firewall_rules.create_or_update(
 > [!div class="nextstepaction"]
 > [Explorar las API de administración](/python/api/overview/azure/sql/managementlibrary)
 
-## <a name="samples"></a>Muestras
-
-* [Creación y administración de bases de datos SQL][1]    
-* [Uso de Python para conectarse a los datos y consultarlos][2]   
-
-[1]: https://github.com/Azure-Samples/sql-database-python-manage
-[2]: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python
-
-Vea la [lista completa](https://azure.microsoft.com/resources/samples/?platform=python&term=SQL) de ejemplos de Azure SQL Database. 
