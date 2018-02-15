@@ -3,13 +3,15 @@
   items:
     - name: Información general
       href: python-sdk-azure-overview.md
+    - name: Instalación
+      href: /azure/python-how-to-install
     - name: Herramientas
       href: python-azure-tools.md
     - name: Introducción a los módulos de Python
       href: python-sdk-azure-get-started.yml
     - name: Autenticación
       href: python-sdk-azure-authenticate.md
-    - name: Inicios rápidos
+    - name: Guías de inicio rápido
       items:
         - name: Web Apps
           href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-python'
@@ -23,7 +25,7 @@
       items:
         - name: Flask + PostgreSQL
           href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-docker-python-postgresql-app'
-    - name: Muestras
+    - name: Ejemplos
       items:
         - name: Máquinas virtuales
           href: python-sdk-azure-virtual-machine-samples.md
