@@ -11,21 +11,21 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 9aae69ebe50652d72c5ad336460c38c091b6ea5d
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 56eb23599d4d40fa91c55aefbe372bcb3a630031
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="azure-recovery-services-backup-libraries-for-python"></a><span data-ttu-id="3dcad-104">Bibliotecas de Azure Recovery Services Backup para Python</span><span class="sxs-lookup"><span data-stu-id="3dcad-104">Azure Recovery Services Backup libraries for python</span></span>
+# <a name="azure-recovery-services-backup-libraries-for-python"></a><span data-ttu-id="32284-104">Bibliotecas de Azure Recovery Services Backup para Python</span><span class="sxs-lookup"><span data-stu-id="32284-104">Azure Recovery Services Backup libraries for python</span></span>
 
-## <a name="install-the-libraries"></a><span data-ttu-id="3dcad-105">Instalación de las bibliotecas</span><span class="sxs-lookup"><span data-stu-id="3dcad-105">Install the libraries</span></span>
+## <a name="install-the-libraries"></a><span data-ttu-id="32284-105">Instalación de las bibliotecas</span><span class="sxs-lookup"><span data-stu-id="32284-105">Install the libraries</span></span>
 
 
-### <a name="management"></a><span data-ttu-id="3dcad-106">Administración</span><span class="sxs-lookup"><span data-stu-id="3dcad-106">Management</span></span>
+### <a name="management"></a><span data-ttu-id="32284-106">Administración</span><span class="sxs-lookup"><span data-stu-id="32284-106">Management</span></span>
 
 ```bash
 pip install azure-mgmt-recoveryservicesbackup
 ```
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="3dcad-107">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="3dcad-107">Explore the Management APIs</span></span>](/python/api/overview/azure/recoveryservicesbackup/managementlibrary)
+> [<span data-ttu-id="32284-107">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="32284-107">Explore the Management APIs</span></span>](/python/api/overview/azure/recoveryservicesbackup/management)
