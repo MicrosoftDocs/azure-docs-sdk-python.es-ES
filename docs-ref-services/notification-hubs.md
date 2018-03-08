@@ -2,31 +2,71 @@
 title: Bibliotecas de Azure Notification Hubs para Python
 description: Referencia de las bibliotecas de Azure Notification Hubs para Python
 keywords: Azure, python, SDK, API, Notification Hubs
-author: sptramer
-ms.author: sttramer
-manager: douge
-ms.date: 07/10/2017
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: d055af57736538dd345446b46143900b7df91b31
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 66b452a40fd524672f4dad92a9d1bd0ffb77a99d
+ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="azure-notification-hubs-libraries-for-python"></a>Bibliotecas de Azure Notification Hubs para Python
 
-## <a name="install-the-libraries"></a>Instalación de las bibliotecas
-
-
-### <a name="management"></a>Administración
+## <a name="management-apipythonapioverviewazurenotificationhubsmanagement"></a>[API de administración](/python/api/overview/azure/notificationhubs/management)
 
 ```bash
 pip install azure-mgmt-notificationhubs
 ```
 
+## <a name="create-the-management-client"></a>Creación del cliente de administración
+
+El código siguiente crea una instancia del cliente de administración.
+
+Debe proporcionar el valor de ``subscription_id``, que se puede obtener en [la lista de suscripciones](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).
+
+Consulte [Autenticación de la administración de recursos](/python/azure/python-sdk-azure-authenticate) para más información sobre cómo controlar la autenticación de Azure Active Directory con el SDK de Python, y crear una instancia de ``Credentials``.
+
+```python
+from azure.mgmt.notificationhubs import NotificationHubsManagementClient
+from azure.common.credentials import UserPassCredentials
+
+# Replace this with your subscription id
+subscription_id = '33333333-3333-3333-3333-333333333333'
+
+# See above for details on creating different types of AAD credentials
+credentials = UserPassCredentials(
+    'user@domain.com',  # Your user
+    'my_password',      # Your password
+)
+
+redis_client = NotificationHubsManagementClient(
+    credentials,
+    subscription_id
+)
+```
+
+## <a name="check-namespace-availability"></a>Comprobación de la disponibilidad del espacio de nombres
+
+El siguiente código comprueba la disponibilidad del espacio de nombres de un centro de notificaciones.
+```python
+from azure.mgmt.notificationhubs.models import CheckAvailabilityParameters
+
+account_name = 'mynotificationhub'
+output = notificationhubs_client.namespaces.check_availability(
+    azure.mgmt.notificationhubs.models.CheckAvailabilityParameters(
+        name = account_name
+    )
+)
+# output is a CheckAvailibilityResource instance
+print(output.is_availiable) # Yes, it's 'availiable', it's a typo in the REST API
+```
+
 > [!div class="nextstepaction"]
-> [Explorar las API de administración](/python/api/overview/azure/notificationhubs/managementlibrary)
+> [Explorar las API de administración](/python/api/overview/azure/notificationhubs/management)
