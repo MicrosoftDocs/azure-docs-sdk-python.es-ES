@@ -9,11 +9,11 @@ ms.date: 08/11/2017
 ms.topic: article
 ms.devlang: python
 ms.service: cosmosdb
-ms.openlocfilehash: 5382779d659f7c85e5ecbd304920e00b78a08a49
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: d56dd69f4fc4513034046f9f721608ad94ff5cfe
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-cosmosdb-libraries-for-python"></a>Bibliotecas de Azure CosmosDB para Python
 
@@ -79,9 +79,9 @@ results = list(result_iterable)
 print(results)
 ```
 > [!div class="nextstepaction"]
-> [Explorar las API de administración](/python/api/overview/azure/cosmosdb/managementlibrary)
+> [Explorar las API de administración](/python/api/overview/azure/cosmosdb/management)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 [Desarrollo de una aplicación de Python con la API de DocumentDB de Azure Cosmos DB](https://azure.microsoft.com/resources/samples/azure-cosmos-db-documentdb-python-getting-started/)
 
