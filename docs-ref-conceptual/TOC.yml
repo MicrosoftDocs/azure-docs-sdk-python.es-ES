@@ -11,6 +11,8 @@
       href: python-sdk-azure-get-started.yml
     - name: Autenticación
       href: python-sdk-azure-authenticate.md
+    - name: Configuración de operaciones
+      href: python-sdk-azure-operation-config.md
     - name: Guías de inicio rápido
       items:
         - name: Web Apps
