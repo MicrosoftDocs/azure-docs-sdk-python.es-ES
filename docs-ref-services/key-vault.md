@@ -1,39 +1,41 @@
 ---
 title: Bibliotecas de Azure Key Vault para Python
-description: "Documentación de referencia de las bibliotecas de cliente de Python para Azure Key Vault"
+description: Documentación de referencia de las bibliotecas de cliente de Python para Azure Key Vault
 author: lisawong19
-keywords: "Azure, Python, SDK, API, claves, Key Vault, autenticación, secreto, clave, seguridad"
+keywords: Azure, Python, SDK, API, claves, Key Vault, autenticación, secreto, clave, seguridad
 manager: douge
 ms.author: liwong
 ms.date: 07/18/2017
 ms.topic: article
 ms.devlang: python
 ms.service: keyvault
-ms.openlocfilehash: 6f0f1012839dad21fb8140dbbdf0f883d2877317
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 1ac9cc92a4c830a8c156117d3e0d188b8032f29a
+ms.sourcegitcommit: 42d868d89eb28a6fdceffccfa03e3209a755b812
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="azure-key-vault-libraries-for-python"></a><span data-ttu-id="d7ffb-104">Bibliotecas de Azure Key Vault para Python</span><span class="sxs-lookup"><span data-stu-id="d7ffb-104">Azure Key Vault libraries for Python</span></span>
+# <a name="azure-key-vault-libraries-for-python"></a><span data-ttu-id="8f87e-104">Bibliotecas de Azure Key Vault para Python</span><span class="sxs-lookup"><span data-stu-id="8f87e-104">Azure Key Vault libraries for Python</span></span>
 
-## <a name="overview"></a><span data-ttu-id="d7ffb-105">Información general</span><span class="sxs-lookup"><span data-stu-id="d7ffb-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="8f87e-105">Información general</span><span class="sxs-lookup"><span data-stu-id="8f87e-105">Overview</span></span>
 
-<span data-ttu-id="d7ffb-106">Cree, actualice y elimine claves y secretos en Azure Key Vault con las bibliotecas de cliente.</span><span class="sxs-lookup"><span data-stu-id="d7ffb-106">Create, update, and delete keys and secrets in Azure Key Vault with the client libraries.</span></span>
+<span data-ttu-id="8f87e-106">Cree, actualice y elimine claves y secretos en Azure Key Vault con las bibliotecas de cliente.</span><span class="sxs-lookup"><span data-stu-id="8f87e-106">Create, update, and delete keys and secrets in Azure Key Vault with the client libraries.</span></span>
 
-<span data-ttu-id="d7ffb-107">Uso de las bibliotecas de administración de Azure Key Vault para crear almacenes de claves, autorizar aplicaciones y administrar permisos.</span><span class="sxs-lookup"><span data-stu-id="d7ffb-107">Use the Azure Key Vault management libraries to create key vaults, authorize applications, and manage permissions.</span></span> 
+<span data-ttu-id="8f87e-107">Uso de las bibliotecas de administración de Azure Key Vault para crear almacenes de claves, autorizar aplicaciones y administrar permisos.</span><span class="sxs-lookup"><span data-stu-id="8f87e-107">Use the Azure Key Vault management libraries to create key vaults, authorize applications, and manage permissions.</span></span> 
 
-<span data-ttu-id="d7ffb-108">Obtenga más información sobre [Azure Key Vault](/azure/key-vault/key-vault-whatis).</span><span class="sxs-lookup"><span data-stu-id="d7ffb-108">Learn more about [Azure Key Vault](/azure/key-vault/key-vault-whatis).</span></span>
+<span data-ttu-id="8f87e-108">Obtenga más información sobre [Azure Key Vault](/azure/key-vault/key-vault-whatis).</span><span class="sxs-lookup"><span data-stu-id="8f87e-108">Learn more about [Azure Key Vault](/azure/key-vault/key-vault-whatis).</span></span>
 
-## <a name="install-the-libraries"></a><span data-ttu-id="d7ffb-109">Instalación de las bibliotecas</span><span class="sxs-lookup"><span data-stu-id="d7ffb-109">Install the libraries</span></span>
+## <a name="install-the-libraries"></a><span data-ttu-id="8f87e-109">Instalación de las bibliotecas</span><span class="sxs-lookup"><span data-stu-id="8f87e-109">Install the libraries</span></span>
 
-### <a name="client-library"></a><span data-ttu-id="d7ffb-110">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="d7ffb-110">Client library</span></span>
+### <a name="client-library"></a><span data-ttu-id="8f87e-110">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="8f87e-110">Client library</span></span>
+
 ```bash
 pip install azure-keyvault
 ```
 
-## <a name="example"></a><span data-ttu-id="d7ffb-111">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="d7ffb-111">Example</span></span>
-<span data-ttu-id="d7ffb-112">Recupere una [clave de web JSON](https://tools.ietf.org/html/draft-ietf-jose-json-web-key-18) desde un almacén de claves.</span><span class="sxs-lookup"><span data-stu-id="d7ffb-112">Retrieve a [JSON web key](https://tools.ietf.org/html/draft-ietf-jose-json-web-key-18) from a Key Vault.</span></span>
+## <a name="examples"></a><span data-ttu-id="8f87e-111">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="8f87e-111">Examples</span></span>
+
+<span data-ttu-id="8f87e-112">Recupere una [clave de web JSON](https://tools.ietf.org/html/draft-ietf-jose-json-web-key-18) desde un almacén de claves.</span><span class="sxs-lookup"><span data-stu-id="8f87e-112">Retrieve a [JSON web key](https://tools.ietf.org/html/draft-ietf-jose-json-web-key-18) from a Key Vault.</span></span>
 
 ```python
 from azure.keyvault import KeyVaultClient, KeyVaultAuthentication
@@ -41,31 +43,58 @@ from azure.common.credentials import ServicePrincipalCredentials
 
 credentials = None
 
-def auth_callack(server, resource, scope):
-    credentials = credentials or ServicePrincipalCredentials(
+def auth_callback(server, resource, scope):
+    credentials = ServicePrincipalCredentials(
         client_id = '', #client id
         secret = '',
         tenant = '',
-        resource = resource
+        resource = "https://vault.azure.net"
     )
     token = credentials.token
     return token['token_type'], token['access_token']
 
-client = KeyVaultClient(KeyVaultAuthentication(auth_callack))
+client = KeyVaultClient(KeyVaultAuthentication(auth_callback))
 
 key_bundle = client.get_key(vault_url, key_name, key_version)
 json_key = key_bundle.key
 ```
-[!div class="nextstepaction"]
-[<span data-ttu-id="d7ffb-113">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="d7ffb-113">Explore the Client APIs</span></span>](/python/api/overview/azure/keyvault/client)
 
-### <a name="management-api"></a><span data-ttu-id="d7ffb-114">API de administración</span><span class="sxs-lookup"><span data-stu-id="d7ffb-114">Management API</span></span>
+<span data-ttu-id="8f87e-113">De forma similar, puede utilizar el siguiente fragmento de código para recuperar un secreto desde el almacén:</span><span class="sxs-lookup"><span data-stu-id="8f87e-113">Similarly, you can use the following snippet to retrieve a secret from the vault:</span></span>
+
+```
+from azure.keyvault import KeyVaultClient, KeyVaultAuthentication
+from azure.common.credentials import ServicePrincipalCredentials
+
+credentials = None
+
+def auth_callback(server, resource, scope):
+    credentials = ServicePrincipalCredentials(
+        client_id = '',
+        secret = '',
+        tenant = '',
+        resource = "https://vault.azure.net"
+    )
+    token = credentials.token
+    return token['token_type'], token['access_token']
+
+client = KeyVaultClient(KeyVaultAuthentication(auth_callback))
+
+secret_bundle = client.get_secret("https://VAULT_ID.vault.azure.net/", "SECRET_ID", "SECRET_VERSION")
+
+print(secret_bundle.value)
+```
+
+[!div class="nextstepaction"]
+[<span data-ttu-id="8f87e-114">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="8f87e-114">Explore the Client APIs</span></span>](/python/api/overview/azure/keyvault/client)
+
+### <a name="management-api"></a><span data-ttu-id="8f87e-115">API de administración</span><span class="sxs-lookup"><span data-stu-id="8f87e-115">Management API</span></span>
+
 ```bash
 pip install azure-mgmt-keyvault
 ```
 
-### <a name="example"></a><span data-ttu-id="d7ffb-115">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="d7ffb-115">Example</span></span>
-<span data-ttu-id="d7ffb-116">En el ejemplo siguiente se muestra cómo crear un almacén de claves de Azure Key Vault.</span><span class="sxs-lookup"><span data-stu-id="d7ffb-116">The following example shows how to create an Azure Key Vault.</span></span> 
+### <a name="example"></a><span data-ttu-id="8f87e-116">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="8f87e-116">Example</span></span>
+<span data-ttu-id="8f87e-117">En el ejemplo siguiente se muestra cómo crear un almacén de claves de Azure Key Vault.</span><span class="sxs-lookup"><span data-stu-id="8f87e-117">The following example shows how to create an Azure Key Vault.</span></span> 
 
 ```python
 from azure.mgmt.keyvault import KeyVaultManagementClient
@@ -100,16 +129,16 @@ vault = kv_client.vaults.create_or_update(
 )
 ```
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="d7ffb-117">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="d7ffb-117">Explore the Management APIs</span></span>](/python/api/azure.mgmt.keyvault)
+> [<span data-ttu-id="8f87e-118">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="8f87e-118">Explore the Management APIs</span></span>](/python/api/azure.mgmt.keyvault)
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="d7ffb-118">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="d7ffb-118">Explore the Management APIs</span></span>](/python/api/overview/azure/keyvault/management)
+> [<span data-ttu-id="8f87e-119">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="8f87e-119">Explore the Management APIs</span></span>](/python/api/overview/azure/keyvault/management)
 
-## <a name="samples"></a><span data-ttu-id="d7ffb-119">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="d7ffb-119">Samples</span></span>
-* <span data-ttu-id="d7ffb-120">[Administración de almacenes de claves][1]</span><span class="sxs-lookup"><span data-stu-id="d7ffb-120">[Manage Key Vaults][1]</span></span> 
-* <span data-ttu-id="d7ffb-121">[Recuperación de almacenes de claves][2]</span><span class="sxs-lookup"><span data-stu-id="d7ffb-121">[Key Vault recovery][2]</span></span>
+## <a name="samples"></a><span data-ttu-id="8f87e-120">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="8f87e-120">Samples</span></span>
+* <span data-ttu-id="8f87e-121">[Administración de almacenes de claves][1]</span><span class="sxs-lookup"><span data-stu-id="8f87e-121">[Manage Key Vaults][1]</span></span> 
+* <span data-ttu-id="8f87e-122">[Recuperación de almacenes de claves][2]</span><span class="sxs-lookup"><span data-stu-id="8f87e-122">[Key Vault recovery][2]</span></span>
 
 [1]: https://azure.microsoft.com/resources/samples/key-vault-python-manage/
 [2]: https://azure.microsoft.com/resources/samples/key-vault-recovery-python/
 
-<span data-ttu-id="d7ffb-122">Vea la [lista completa](https://azure.microsoft.com/resources/samples/?platform=python&term=key+vault) de ejemplos de Azure Key Vault.</span><span class="sxs-lookup"><span data-stu-id="d7ffb-122">View the [complete list](https://azure.microsoft.com/resources/samples/?platform=python&term=key+vault) of Azure Key Vault samples.</span></span> 
+<span data-ttu-id="8f87e-123">Vea la [lista completa](https://azure.microsoft.com/resources/samples/?platform=python&term=key+vault) de ejemplos de Azure Key Vault.</span><span class="sxs-lookup"><span data-stu-id="8f87e-123">View the [complete list](https://azure.microsoft.com/resources/samples/?platform=python&term=key+vault) of Azure Key Vault samples.</span></span> 
