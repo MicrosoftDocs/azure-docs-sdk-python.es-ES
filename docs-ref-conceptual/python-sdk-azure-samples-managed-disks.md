@@ -1,20 +1,20 @@
 ---
 title: Managed Disks
-description: "Cree, cambie el tamaño y actualice un disco administrado."
+description: Cree, cambie el tamaño y actualice un disco administrado.
 author: lisawong19
 manager: douge
-ms.assetid: 
+ms.assetid: ''
 ms.devlang: python
 ms.topic: article
 ms.service: Azure
 ms.technology: Azure
 ms.date: 6/15/2017
 ms.author: liwong
-ms.openlocfilehash: 1dceb1b2fe700904b530f1834f0338f7d5e61999
-ms.sourcegitcommit: 3e477d608bbb41f0c561c88e4c665013e3008c26
+ms.openlocfilehash: 733bd0ffce6ddb10219dae40bad6ea54e1efcd70
+ms.sourcegitcommit: 560362db0f65307c8b02b7b7ad8642b5c4aa6294
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="managed-disks"></a>Managed Disks
 
@@ -22,7 +22,7 @@ Ya están disponibles Azure Managed Disks y un conjunto de escalado de 1000 máq
 
 
 
-Desde la perspectiva del desarrollador, la experiencia con los discos administrados en la CLI de Azure es específica del idioma de la experiencia de la CLI en otras herramientas multiplataforma. Puede usar [Azure SDK para Python](https://azure.microsoft.com/develop/python/) y el [paquete azure-mgmt-compute 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) para administrar discos administrados. Puede crear un cliente de proceso mediante este [tutorial](http://azure-sdk-for-python.readthedocs.io/en/latest/resourcemanagementcomputenetwork.html).
+Desde la perspectiva del desarrollador, la experiencia con los discos administrados en la CLI de Azure es específica del idioma de la experiencia de la CLI en otras herramientas multiplataforma. Puede usar [Azure SDK para Python](https://azure.microsoft.com/develop/python/) y el [paquete azure-mgmt-compute 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) para administrar discos administrados. Puede crear un cliente de proceso mediante este [tutorial](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python).
 
 
 ## <a name="standalone-managed-disks"></a>Discos administrados independientes
