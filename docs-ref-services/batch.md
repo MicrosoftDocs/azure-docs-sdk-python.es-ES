@@ -1,7 +1,7 @@
 ---
 title: Bibliotecas de Azure Batch para Python
-description: "Documentación de referencia de las bibliotecas de Batch para Python"
-keywords: "Azure, Python, SDK, API, Batch, proceso, programación, ejecución larga"
+description: Documentación de referencia de las bibliotecas de Batch para Python
+keywords: Azure, Python, SDK, API, Batch, proceso, programación, ejecución larga
 author: lisawong19
 ms.author: liwong
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478988"
 ---
 # <a name="azure-batch-libraries-for-python"></a>Bibliotecas de Azure Batch para Python
 
