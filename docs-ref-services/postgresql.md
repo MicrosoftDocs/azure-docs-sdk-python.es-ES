@@ -1,6 +1,6 @@
 ---
 title: Bibliotecas de Azure PostgreSQL para Python
-description: 
+description: ''
 keywords: Azure, Python, SDK, API, SQL, Database, Postgres, PostgreSQL
 author: lisawong19
 ms.author: liwong
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478938"
 ---
 #<a name="azure-postgresql-libraries-for-python"></a><span data-ttu-id="1199b-103">Bibliotecas de Azure PostgreSQL para Python</span><span class="sxs-lookup"><span data-stu-id="1199b-103">Azure PostgreSQL libraries for Python</span></span>
 

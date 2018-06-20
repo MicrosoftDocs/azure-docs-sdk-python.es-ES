@@ -1,7 +1,7 @@
 ---
 title: Bibliotecas de Service Bus para Python
-description: "Documentación de referencia del cliente de Python y las bibliotecas de administración de Service"
-keywords: "Azure, Python, SDK, API, mensajería, pubsub, pub-sub, agente de mensajes"
+description: Documentación de referencia del cliente de Python y las bibliotecas de administración de Service
+keywords: Azure, Python, SDK, API, mensajería, pubsub, pub-sub, agente de mensajes
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -14,6 +14,7 @@ ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/24/2018
+ms.locfileid: "29551598"
 ---
 # <a name="service-bus-libraries-for-python"></a><span data-ttu-id="3872e-104">Bibliotecas de Service Bus para Python</span><span class="sxs-lookup"><span data-stu-id="3872e-104">Service Bus libraries for Python</span></span>
 

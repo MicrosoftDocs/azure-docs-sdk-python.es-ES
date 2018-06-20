@@ -14,6 +14,7 @@ ms.sourcegitcommit: 41e6e6b5469271f4ec497a322b460e2a2af2c73d
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30204142"
 ---
 # <a name="azure-cosmos-db-libraries-for-python"></a><span data-ttu-id="9ac66-104">Bibliotecas de Azure Cosmos DB para Python</span><span class="sxs-lookup"><span data-stu-id="9ac66-104">Azure Cosmos DB libraries for Python</span></span>
 

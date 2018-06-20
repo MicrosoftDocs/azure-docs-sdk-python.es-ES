@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29479078"
 ---
 # <a name="azure-network-libraries-for-python"></a><span data-ttu-id="a58a9-104">Bibliotecas de Azure Virtual Network para Python</span><span class="sxs-lookup"><span data-stu-id="a58a9-104">Azure Network libraries for python</span></span>
 

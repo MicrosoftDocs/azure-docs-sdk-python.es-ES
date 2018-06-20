@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29479238"
 ---
 # <a name="azure-server-manager-libraries-for-python"></a><span data-ttu-id="254c6-104">Bibliotecas del administrador del servidor de Azure para Python</span><span class="sxs-lookup"><span data-stu-id="254c6-104">Azure Server Manager libraries for python</span></span>
 

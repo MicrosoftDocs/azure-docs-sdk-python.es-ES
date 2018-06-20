@@ -1,9 +1,9 @@
 ---
-title: "Creación de un flujo de trabajo de aplicación lógica"
-description: "Creación de un flujo de trabajo de aplicación lógica"
+title: Creación de un flujo de trabajo de aplicación lógica
+description: Creación de un flujo de trabajo de aplicación lógica
 author: lisawong19
 manager: douge
-ms.assetid: 
+ms.assetid: ''
 ms.devlang: python
 ms.topic: article
 ms.service: Azure
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909068"
 ---
 # <a name="create-a-logic-app-workflow"></a><span data-ttu-id="bae7d-103">Creación de un flujo de trabajo de aplicación lógica</span><span class="sxs-lookup"><span data-stu-id="bae7d-103">Create a Logic App Workflow</span></span>
 

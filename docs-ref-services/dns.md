@@ -16,6 +16,7 @@ ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/24/2018
+ms.locfileid: "29551568"
 ---
 # <a name="azure-dns-libraries-for-python"></a><span data-ttu-id="37ea7-104">Bibliotecas de Azure DNS para Python</span><span class="sxs-lookup"><span data-stu-id="37ea7-104">Azure DNS libraries for python</span></span>
 

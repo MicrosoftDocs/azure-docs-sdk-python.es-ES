@@ -1,6 +1,6 @@
 ---
-title: "Instalación"
-description: "Cómo instalar Azure SDK para Python"
+title: Instalación
+description: Cómo instalar Azure SDK para Python
 keywords: Azure, Python, SDK, API
 author: lisawong19
 ms.author: liwong
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 757bf84535fd9d8299c4b51ec92a5ab1926cb671
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/27/2018
+ms.locfileid: "29565824"
 ---
 # <a name="installation"></a><span data-ttu-id="5bb34-104">Instalación</span><span class="sxs-lookup"><span data-stu-id="5bb34-104">Installation</span></span>
 

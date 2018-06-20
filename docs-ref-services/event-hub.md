@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478798"
 ---
 # <a name="azure-event-hubs-libraries-for-python"></a><span data-ttu-id="843c8-104">Bibliotecas de Azure Event Hubs para Python</span><span class="sxs-lookup"><span data-stu-id="843c8-104">Azure Event Hubs libraries for python</span></span>
 

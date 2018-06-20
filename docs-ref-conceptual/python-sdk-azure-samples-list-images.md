@@ -1,9 +1,9 @@
 ---
-title: "Lista de imágenes"
-description: "Imprima todas las imágenes disponibles que puede usar para crear máquinas virtuales."
+title: Lista de imágenes
+description: Imprima todas las imágenes disponibles que puede usar para crear máquinas virtuales.
 author: lisawong19
 manager: douge
-ms.assetid: 
+ms.assetid: ''
 ms.devlang: python
 ms.topic: article
 ms.service: Azure
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909038"
 ---
 # <a name="list-images"></a><span data-ttu-id="15aed-103">Lista de imágenes</span><span class="sxs-lookup"><span data-stu-id="15aed-103">List images</span></span>
 

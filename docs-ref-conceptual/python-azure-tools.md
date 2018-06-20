@@ -1,6 +1,6 @@
 ---
 title: Herramientas de Azure para desarrolladores de Python | Microsoft Docs
-description: "Integraciones de IDE e interfaces de línea de comandos para desarrolladores de Python que trabajan con Azure."
+description: Integraciones de IDE e interfaces de línea de comandos para desarrolladores de Python que trabajan con Azure.
 author: lisawong19
 manager: douge
 ms.devlang: python
@@ -14,6 +14,7 @@ ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/05/2017
+ms.locfileid: "26184599"
 ---
 # <a name="azure-tools-for-python-developers"></a><span data-ttu-id="43228-103">Herramientas de Azure para desarrolladores de Python</span><span class="sxs-lookup"><span data-stu-id="43228-103">Azure tools for Python developers</span></span>
 
