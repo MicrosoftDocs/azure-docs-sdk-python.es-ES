@@ -1,7 +1,7 @@
 ---
-title: "Autenticación con las bibliotecas de administración de Azure para Python"
-description: "Autentique con una entidad de servicio en las bibliotecas de administración de Azure para Python."
-keywords: "Azure, Python, SDK, API, autenticación, active directory, entidad de servicio"
+title: Autenticación con las bibliotecas de administración de Azure para Python
+description: Autentique con una entidad de servicio en las bibliotecas de administración de Azure para Python.
+keywords: Azure, Python, SDK, API, autenticación, active directory, entidad de servicio
 author: lisawong19
 ms.author: liwong
 manager: douge
@@ -10,24 +10,25 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 271722eee1ef982d1f091b3d3af29069917f3e17
-ms.sourcegitcommit: 97e5d660eb4a006f969c3010087e1386cc6eb482
+ms.openlocfilehash: 78b248071e4718c1ab5ad743e697eafcfb510ec5
+ms.sourcegitcommit: 86f7f40295271ef94272642efb89b471aae99a2c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 06/18/2018
+ms.locfileid: "35720056"
 ---
-# <a name="authenticate-with-the-azure-management-libraries-for-python"></a><span data-ttu-id="a29e8-104">Autenticación con las bibliotecas de administración de Azure para Python</span><span class="sxs-lookup"><span data-stu-id="a29e8-104">Authenticate with the Azure Management Libraries for Python</span></span>
+# <a name="authenticate-with-the-azure-management-libraries-for-python"></a><span data-ttu-id="88cc1-104">Autenticación con las bibliotecas de administración de Azure para Python</span><span class="sxs-lookup"><span data-stu-id="88cc1-104">Authenticate with the Azure Management Libraries for Python</span></span>
 
-<span data-ttu-id="a29e8-105">Hay varias opciones para autenticar la aplicación en Azure cuando se usan las bibliotecas de administración para Python para crear y administrar recursos.</span><span class="sxs-lookup"><span data-stu-id="a29e8-105">Several options are available to authenticate your application with Azure when using the Python management libraries to create and manage resources.</span></span>
+<span data-ttu-id="88cc1-105">Hay varias opciones para autenticar la aplicación en Azure cuando se usan las bibliotecas de administración para Python para crear y administrar recursos.</span><span class="sxs-lookup"><span data-stu-id="88cc1-105">Several options are available to authenticate your application with Azure when using the Python management libraries to create and manage resources.</span></span>
 
-## <a name="mgmt-auth-token"></a><span data-ttu-id="a29e8-106">Autenticación con credenciales de token</span><span class="sxs-lookup"><span data-stu-id="a29e8-106">Authenticate with token credentials</span></span>
+## <a name="mgmt-auth-token"></a><span data-ttu-id="88cc1-106">Autenticación con credenciales de token</span><span class="sxs-lookup"><span data-stu-id="88cc1-106">Authenticate with token credentials</span></span>
 
-<span data-ttu-id="a29e8-107">Almacene las credenciales de forma segura en un archivo de configuración, el Registro o Azure Key Vault.</span><span class="sxs-lookup"><span data-stu-id="a29e8-107">Store the credentials securely in a configuration file, the registry, or Azure KeyVault.</span></span>
+<span data-ttu-id="88cc1-107">Almacene las credenciales de forma segura en un archivo de configuración, el Registro o Azure Key Vault.</span><span class="sxs-lookup"><span data-stu-id="88cc1-107">Store the credentials securely in a configuration file, the registry, or Azure KeyVault.</span></span>
 
-<span data-ttu-id="a29e8-108">En el ejemplo siguiente se usa una [entidad de servicio](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?toc=%2fazure%2fazure-resource-manager%2ftoc.json) para la autenticación.</span><span class="sxs-lookup"><span data-stu-id="a29e8-108">The following example uses a [Service Principal](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?toc=%2fazure%2fazure-resource-manager%2ftoc.json) for authentication.</span></span>
+<span data-ttu-id="88cc1-108">En el ejemplo siguiente se usa una [entidad de servicio](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?toc=%2fazure%2fazure-resource-manager%2ftoc.json) para la autenticación.</span><span class="sxs-lookup"><span data-stu-id="88cc1-108">The following example uses a [Service Principal](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?toc=%2fazure%2fazure-resource-manager%2ftoc.json) for authentication.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="a29e8-109">Puede crear una entidad de servicio con la CLI de Azure 2.0</span><span class="sxs-lookup"><span data-stu-id="a29e8-109">You can create a Service Principal via the Azure CLI 2.0</span></span>
+> <span data-ttu-id="88cc1-109">Puede crear una entidad de servicio con la CLI de Azure 2.0</span><span class="sxs-lookup"><span data-stu-id="88cc1-109">You can create a Service Principal via the Azure CLI 2.0</span></span>
 > ```bash
 > az ad sp create-for-rbac --name "MY-PRINCIPAL-NAME" --password "STRONG-SECRET-PASSWORD"
 > ```
@@ -51,7 +52,7 @@ ms.lasthandoff: 02/14/2018
     )
 ```
 
-> <span data-ttu-id="a29e8-110">[NOTA] Para conectarse a una de las nubes soberanas de Azure, use el parámetro `cloud_environment`.</span><span class="sxs-lookup"><span data-stu-id="a29e8-110">[NOTE!] To connect to one of the Azure sovereign clouds, use the `cloud_environment` parameter.</span></span>
+> <span data-ttu-id="88cc1-110">[NOTA] Para conectarse a una de las nubes soberanas de Azure, use el parámetro `cloud_environment`.</span><span class="sxs-lookup"><span data-stu-id="88cc1-110">[NOTE!] To connect to one of the Azure sovereign clouds, use the `cloud_environment` parameter.</span></span>
 
 ```python
     from azure.common.credentials import ServicePrincipalCredentials
@@ -74,7 +75,7 @@ ms.lasthandoff: 02/14/2018
     )
 ```
 
-<span data-ttu-id="a29e8-111">Si necesita más control, se recomienda usar [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) y el contenedor ADAL del SDK.</span><span class="sxs-lookup"><span data-stu-id="a29e8-111">If you need more control, it is recommended to use [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) and the SDK ADAL wrapper.</span></span> <span data-ttu-id="a29e8-112">Consulte el sitio web de ADAL para ver todos los ejemplos y la lista de escenarios disponibles.</span><span class="sxs-lookup"><span data-stu-id="a29e8-112">Please refer to the ADAL website for all the available scenarios list and samples.</span></span> <span data-ttu-id="a29e8-113">Por ejemplo, para la autenticación de entidad de servicio:</span><span class="sxs-lookup"><span data-stu-id="a29e8-113">For instance for service principal authentication:</span></span>
+<span data-ttu-id="88cc1-111">Si necesita más control, se recomienda usar [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) y el contenedor ADAL del SDK.</span><span class="sxs-lookup"><span data-stu-id="88cc1-111">If you need more control, it is recommended to use [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) and the SDK ADAL wrapper.</span></span> <span data-ttu-id="88cc1-112">Consulte el sitio web de ADAL para ver todos los ejemplos y la lista de escenarios disponibles.</span><span class="sxs-lookup"><span data-stu-id="88cc1-112">Please refer to the ADAL website for all the available scenarios list and samples.</span></span> <span data-ttu-id="88cc1-113">Por ejemplo, para la autenticación de entidad de servicio:</span><span class="sxs-lookup"><span data-stu-id="88cc1-113">For instance for service principal authentication:</span></span>
 
 ```python
     import adal
@@ -102,9 +103,9 @@ ms.lasthandoff: 02/14/2018
     )
 ```
 
-<span data-ttu-id="a29e8-114">Se pueden usar todas las llamadas válidas a ADAL con la clase `AdalAuthentication`.</span><span class="sxs-lookup"><span data-stu-id="a29e8-114">All ADAL valid calls can be used with the `AdalAuthentication` class.</span></span>
+<span data-ttu-id="88cc1-114">Se pueden usar todas las llamadas válidas a ADAL con la clase `AdalAuthentication`.</span><span class="sxs-lookup"><span data-stu-id="88cc1-114">All ADAL valid calls can be used with the `AdalAuthentication` class.</span></span>
 
-<span data-ttu-id="a29e8-115">Después, cree un objeto de cliente para empezar a trabajar con la API:</span><span class="sxs-lookup"><span data-stu-id="a29e8-115">Next, create a client object to start working with the API:</span></span>
+<span data-ttu-id="88cc1-115">Después, cree un objeto de cliente para empezar a trabajar con la API:</span><span class="sxs-lookup"><span data-stu-id="88cc1-115">Next, create a client object to start working with the API:</span></span>
 
 ```python
 from azure.mgmt.compute import ComputeManagementClient
@@ -115,28 +116,28 @@ subscription_id = '33333333-3333-3333-3333-333333333333'
 client = ComputeManagementClient(credentials, subscription_id)
 ```
 
-> <span data-ttu-id="a29e8-116">[NOTA] Cuando se usa una nube soberana de Azure, debe especificar también la dirección URL base apropiada (mediante las constantes de `msrestazure.azure_cloud`) al crear el cliente de administración.</span><span class="sxs-lookup"><span data-stu-id="a29e8-116">[NOTE!] When using an Azure sovereign cloud you must also specify the appropriate base URL (via the constants in `msrestazure.azure_cloud`) when creating the management client.</span></span> <span data-ttu-id="a29e8-117">Por ejemplo, para la nube de China de Azure:</span><span class="sxs-lookup"><span data-stu-id="a29e8-117">For example for Azure China Cloud:</span></span>
+> <span data-ttu-id="88cc1-116">[NOTA] Cuando se usa una nube soberana de Azure, debe especificar también la dirección URL base apropiada (mediante las constantes de `msrestazure.azure_cloud`) al crear el cliente de administración.</span><span class="sxs-lookup"><span data-stu-id="88cc1-116">[NOTE!] When using an Azure sovereign cloud you must also specify the appropriate base URL (via the constants in `msrestazure.azure_cloud`) when creating the management client.</span></span> <span data-ttu-id="88cc1-117">Por ejemplo, para la nube de China de Azure:</span><span class="sxs-lookup"><span data-stu-id="88cc1-117">For example for Azure China Cloud:</span></span>
 > ```python
 > client = ComputeManagementClient(credentials, subscription_id,
 >     base_url=AZURE_CHINA_CLOUD.endpoints.resource_manager)
 > ```
 
 
-## <a name="mgmt-auth-file"></a><span data-ttu-id="a29e8-118">Autenticación basada en archivos</span><span class="sxs-lookup"><span data-stu-id="a29e8-118">File based authentication</span></span>
+## <a name="mgmt-auth-file"></a><span data-ttu-id="88cc1-118">Autenticación basada en archivos</span><span class="sxs-lookup"><span data-stu-id="88cc1-118">File based authentication</span></span>
 
-<span data-ttu-id="a29e8-119">La manera más sencilla de autenticar es crear un archivo JSON que contenga las credenciales de una entidad de servicio de Azure.</span><span class="sxs-lookup"><span data-stu-id="a29e8-119">The simplest way to authenticate is to create a JSON file that contains credentials for an Azure Service Principal.</span></span> <span data-ttu-id="a29e8-120">Puede utilizar el siguiente comando de la CLI para crear una nueva entidad de servicio y este archivo al mismo tiempo:</span><span class="sxs-lookup"><span data-stu-id="a29e8-120">You can use the following CLI command to create a new Service Principal and this file at the same time:</span></span>
+<span data-ttu-id="88cc1-119">La manera más sencilla de autenticar es crear un archivo JSON que contenga las credenciales de una entidad de servicio de Azure.</span><span class="sxs-lookup"><span data-stu-id="88cc1-119">The simplest way to authenticate is to create a JSON file that contains credentials for an Azure Service Principal.</span></span> <span data-ttu-id="88cc1-120">Puede utilizar el siguiente comando de la CLI para crear una nueva entidad de servicio y este archivo al mismo tiempo:</span><span class="sxs-lookup"><span data-stu-id="88cc1-120">You can use the following CLI command to create a new Service Principal and this file at the same time:</span></span>
 
 ```bash
 az ad sp create-for-rbac --sdk-auth > mycredentials.json
 ```
 
-<span data-ttu-id="a29e8-121">Guarde este archivo en una ubicación segura en el sistema donde el código pueda leerlo.</span><span class="sxs-lookup"><span data-stu-id="a29e8-121">Save this file in a secure location on your system where your code can read it.</span></span> <span data-ttu-id="a29e8-122">Establezca una variable de entorno con la ruta de acceso completa al archivo en el shell:</span><span class="sxs-lookup"><span data-stu-id="a29e8-122">Set an environment variable with the full path to the file in your shell:</span></span>
+<span data-ttu-id="88cc1-121">Guarde este archivo en una ubicación segura en el sistema donde el código pueda leerlo.</span><span class="sxs-lookup"><span data-stu-id="88cc1-121">Save this file in a secure location on your system where your code can read it.</span></span> <span data-ttu-id="88cc1-122">Establezca una variable de entorno con la ruta de acceso completa al archivo en el shell:</span><span class="sxs-lookup"><span data-stu-id="88cc1-122">Set an environment variable with the full path to the file in your shell:</span></span>
 
 ```bash
 export AZURE_AUTH_LOCATION=~/.azure/azure_credentials.json
 ```
 
-<span data-ttu-id="a29e8-123">Si desea crear el archivo por sí mismo, siga este formato:</span><span class="sxs-lookup"><span data-stu-id="a29e8-123">If you want to create the file yourself, please follow this format:</span></span>
+<span data-ttu-id="88cc1-123">Si desea crear el archivo por sí mismo, siga este formato:</span><span class="sxs-lookup"><span data-stu-id="88cc1-123">If you want to create the file yourself, please follow this format:</span></span>
 
 ```json
 {
@@ -153,7 +154,7 @@ export AZURE_AUTH_LOCATION=~/.azure/azure_credentials.json
 }
 ```
 
-<span data-ttu-id="a29e8-124">A continuación, puede crear cualquier cliente mediante la factoría de clientes:</span><span class="sxs-lookup"><span data-stu-id="a29e8-124">You can then create any client using the client factory:</span></span>
+<span data-ttu-id="88cc1-124">A continuación, puede crear cualquier cliente mediante la factoría de clientes:</span><span class="sxs-lookup"><span data-stu-id="88cc1-124">You can then create any client using the client factory:</span></span>
 ```python
 from azure.common.client_factory import get_client_from_auth_file
 from azure.mgmt.compute import ComputeManagementClient
@@ -161,8 +162,8 @@ from azure.mgmt.compute import ComputeManagementClient
 client = get_client_from_auth_file(ComputeManagementClient)
 ```
 
-## <a name="mgmt-auth-msi"></a><span data-ttu-id="a29e8-125">Autenticación con Managed Service Identity (MSI)</span><span class="sxs-lookup"><span data-stu-id="a29e8-125">Authenticate with Managed Service Identity(MSI)</span></span> 
-<span data-ttu-id="a29e8-126">MSI es una manera sencilla para que un recurso de Azure pueda usar el SDK o la CLI sin necesidad de crear credenciales específicas.</span><span class="sxs-lookup"><span data-stu-id="a29e8-126">MSI is a simple way for a resource in Azure to use SDK/CLI without the need to create specific credentials.</span></span>
+## <a name="mgmt-auth-msi"></a><span data-ttu-id="88cc1-125">Autenticación con Managed Service Identity (MSI)</span><span class="sxs-lookup"><span data-stu-id="88cc1-125">Authenticate with Managed Service Identity(MSI)</span></span> 
+<span data-ttu-id="88cc1-126">MSI es una manera sencilla para que un recurso de Azure pueda usar el SDK o la CLI sin necesidad de crear credenciales específicas.</span><span class="sxs-lookup"><span data-stu-id="88cc1-126">MSI is a simple way for a resource in Azure to use SDK/CLI without the need to create specific credentials.</span></span>
 
 ```python
 from msrestazure.azure_active_directory import MSIAuthentication
@@ -187,16 +188,16 @@ from azure.mgmt.resource import ResourceManagementClient, SubscriptionClient
 
 ```
 
-## <a name="mgmt-auth-cli"></a><span data-ttu-id="a29e8-127">Autenticación basada en la CLI</span><span class="sxs-lookup"><span data-stu-id="a29e8-127">CLI-based authentication</span></span>
+## <a name="mgmt-auth-cli"></a><span data-ttu-id="88cc1-127">Autenticación basada en la CLI</span><span class="sxs-lookup"><span data-stu-id="88cc1-127">CLI-based authentication</span></span>
 
-<span data-ttu-id="a29e8-128">El SDK es capaz de crear un cliente con su suscripción activa de la CLI.</span><span class="sxs-lookup"><span data-stu-id="a29e8-128">The SDK is able to create a client using your CLI active subscription.</span></span>
+<span data-ttu-id="88cc1-128">El SDK es capaz de crear un cliente con su suscripción activa de la CLI.</span><span class="sxs-lookup"><span data-stu-id="88cc1-128">The SDK is able to create a client using your CLI active subscription.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="a29e8-129">Esto se debe usar como inicio rápido a la experiencia del desarrollador.</span><span class="sxs-lookup"><span data-stu-id="a29e8-129">This should be used as quick start developer experience.</span></span> <span data-ttu-id="a29e8-130">Con fines de producción, use [ADAL](#authenticate-with-token-credentials) o su propio sistema de credenciales.</span><span class="sxs-lookup"><span data-stu-id="a29e8-130">For production purposes, use [ADAL](#authenticate-with-token-credentials) or your own credentials system.</span></span>
-> <span data-ttu-id="a29e8-131">Cualquier cambio en la configuración de la CLI afectará a la ejecución del SDK.</span><span class="sxs-lookup"><span data-stu-id="a29e8-131">Any change to your CLI configuration will impact the SDK execution.</span></span>
+> <span data-ttu-id="88cc1-129">Esto se debe usar como inicio rápido a la experiencia del desarrollador.</span><span class="sxs-lookup"><span data-stu-id="88cc1-129">This should be used as quick start developer experience.</span></span> <span data-ttu-id="88cc1-130">Con fines de producción, use [ADAL](#authenticate-with-token-credentials) o su propio sistema de credenciales.</span><span class="sxs-lookup"><span data-stu-id="88cc1-130">For production purposes, use [ADAL](#authenticate-with-token-credentials) or your own credentials system.</span></span>
+> <span data-ttu-id="88cc1-131">Cualquier cambio en la configuración de la CLI afectará a la ejecución del SDK.</span><span class="sxs-lookup"><span data-stu-id="88cc1-131">Any change to your CLI configuration will impact the SDK execution.</span></span>
 
-<span data-ttu-id="a29e8-132">Para definir las credenciales activas, utilice [az login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).</span><span class="sxs-lookup"><span data-stu-id="a29e8-132">To define active credentials, use [az login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).</span></span>
-<span data-ttu-id="a29e8-133">El identificador predeterminado de la suscripción puede ser el que ya tiene o puede definirlo con [az account](https://docs.microsoft.com/cli/azure/manage-azure-subscriptions-azure-cli).</span><span class="sxs-lookup"><span data-stu-id="a29e8-133">Default subscription ID is either the only one you have, or you can define it using [az account](https://docs.microsoft.com/cli/azure/manage-azure-subscriptions-azure-cli)</span></span>
+<span data-ttu-id="88cc1-132">Para definir las credenciales activas, utilice [az login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).</span><span class="sxs-lookup"><span data-stu-id="88cc1-132">To define active credentials, use [az login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).</span></span>
+<span data-ttu-id="88cc1-133">El identificador predeterminado de la suscripción puede ser el que ya tiene o puede definirlo con [az account](https://docs.microsoft.com/cli/azure/manage-azure-subscriptions-azure-cli).</span><span class="sxs-lookup"><span data-stu-id="88cc1-133">Default subscription ID is either the only one you have, or you can define it using [az account](https://docs.microsoft.com/cli/azure/manage-azure-subscriptions-azure-cli)</span></span>
 
 ```python
 from azure.common.client_factory import get_client_from_cli_profile
@@ -205,17 +206,17 @@ from azure.mgmt.compute import ComputeManagementClient
 client = get_client_from_cli_profile(ComputeManagementClient)
 ```
 
-## <a name="mgmt-auth-legacy"></a><span data-ttu-id="a29e8-134">Autenticación con credenciales de token (heredado)</span><span class="sxs-lookup"><span data-stu-id="a29e8-134">Authenticate with token credentials (legacy)</span></span>
+## <a name="mgmt-auth-legacy"></a><span data-ttu-id="88cc1-134">Autenticación con credenciales de token (heredado)</span><span class="sxs-lookup"><span data-stu-id="88cc1-134">Authenticate with token credentials (legacy)</span></span>
 
-<span data-ttu-id="a29e8-135">En versiones anteriores del SDK, ADAL aún no estaba disponible y se proporciona una clase `UserPassCredentials`.</span><span class="sxs-lookup"><span data-stu-id="a29e8-135">In previous version of the SDK, ADAL was not yet available and we provided a `UserPassCredentials` class.</span></span> <span data-ttu-id="a29e8-136">Esto se considera en desuso y no debe usarse más.</span><span class="sxs-lookup"><span data-stu-id="a29e8-136">This is considered deprecated and should not be used anymore.</span></span>
+<span data-ttu-id="88cc1-135">En versiones anteriores del SDK, ADAL aún no estaba disponible y se proporciona una clase `UserPassCredentials`.</span><span class="sxs-lookup"><span data-stu-id="88cc1-135">In previous version of the SDK, ADAL was not yet available and we provided a `UserPassCredentials` class.</span></span> <span data-ttu-id="88cc1-136">Esto se considera en desuso y no debe usarse más.</span><span class="sxs-lookup"><span data-stu-id="88cc1-136">This is considered deprecated and should not be used anymore.</span></span>
 
-<span data-ttu-id="a29e8-137">Este ejemplo muestra el escenario de usuario y contraseña.</span><span class="sxs-lookup"><span data-stu-id="a29e8-137">This sample shows user/password scenario.</span></span> <span data-ttu-id="a29e8-138">No admite la autenticación de doble factor.</span><span class="sxs-lookup"><span data-stu-id="a29e8-138">This does not support 2FA.</span></span>
+<span data-ttu-id="88cc1-137">Este ejemplo muestra el escenario de usuario y contraseña.</span><span class="sxs-lookup"><span data-stu-id="88cc1-137">This sample shows user/password scenario.</span></span> <span data-ttu-id="88cc1-138">No admite la autenticación de doble factor.</span><span class="sxs-lookup"><span data-stu-id="88cc1-138">This does not support 2FA.</span></span>
 
 ```python
     from azure.common.credentials import UserPassCredentials
 
     credentials = UserPassCredentials(
         'user@domain.com',
-        'my_smart_password',
+        'my_smart_password'
     )
 ```
