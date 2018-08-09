@@ -8,25 +8,25 @@ ms.date: 02/22/2018
 ms.topic: article
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 6d2ba0580f8b6dda857b48ed5235a8c969a051f5
-ms.sourcegitcommit: 7066ace94076483bae7d54172605f431e47bd5ee
+ms.openlocfilehash: a4d006e6244bf6fb1151e32583e8bc3a642d4663
+ms.sourcegitcommit: 8a9e4295359a4f47b21908541e2460c333e94a0a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2018
-ms.locfileid: "30820129"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624981"
 ---
-# <a name="multi-cloud---use-azure-on-all-regions"></a><span data-ttu-id="a50fa-103">Nubes múltiples: uso de Azure en todas las regiones</span><span class="sxs-lookup"><span data-stu-id="a50fa-103">Multi-cloud - use Azure on all regions</span></span>
+# <a name="multi-cloud---use-azure-on-all-regions"></a><span data-ttu-id="5573b-103">Nubes múltiples: uso de Azure en todas las regiones</span><span class="sxs-lookup"><span data-stu-id="5573b-103">Multi-cloud - use Azure on all regions</span></span>
 
-<span data-ttu-id="a50fa-104">Puede usar el SDK de Azure para Python para conectarse a todas las regiones en las que Azure está [disponible](https://azure.microsoft.com/regions/services).</span><span class="sxs-lookup"><span data-stu-id="a50fa-104">You can use the Azure SDK for Python to connect to all regions where Azure is [available](https://azure.microsoft.com/regions/services).</span></span>
+<span data-ttu-id="5573b-104">Puede usar el SDK de Azure para Python para conectarse a todas las regiones en las que Azure está [disponible](https://azure.microsoft.com/regions/services).</span><span class="sxs-lookup"><span data-stu-id="5573b-104">You can use the Azure SDK for Python to connect to all regions where Azure is [available](https://azure.microsoft.com/regions/services).</span></span>
 
-<span data-ttu-id="a50fa-105">De forma predeterminada, el SDK de Azure para Python está configurado para conectarse a la nube pública de Azure.</span><span class="sxs-lookup"><span data-stu-id="a50fa-105">By default, the Azure SDK for Python is configured to connect to public Azure.</span></span>
+<span data-ttu-id="5573b-105">De forma predeterminada, el SDK de Azure para Python está configurado para conectarse a la nube pública de Azure.</span><span class="sxs-lookup"><span data-stu-id="5573b-105">By default, the Azure SDK for Python is configured to connect to public Azure.</span></span>
 
-## <a name="using-predeclared-cloud-definition"></a><span data-ttu-id="a50fa-106">Uso de la definición de nube previamente declarada</span><span class="sxs-lookup"><span data-stu-id="a50fa-106">Using predeclared cloud definition</span></span>
+## <a name="using-predeclared-cloud-definition"></a><span data-ttu-id="5573b-106">Uso de la definición de nube previamente declarada</span><span class="sxs-lookup"><span data-stu-id="5573b-106">Using predeclared cloud definition</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="a50fa-107">La versión del paquete `msrestazure` debe ser superior o igual a la 0.4.11 para esta sección.</span><span class="sxs-lookup"><span data-stu-id="a50fa-107">The `msrestazure` package must be superior or equals to 0.4.11 for this section.</span></span>
+> <span data-ttu-id="5573b-107">La versión del paquete `msrestazure` debe ser superior o igual a la 0.4.11 para esta sección.</span><span class="sxs-lookup"><span data-stu-id="5573b-107">The `msrestazure` package must be superior or equals to 0.4.11 for this section.</span></span>
 
-<span data-ttu-id="a50fa-108">Puede usar el módulo `azure_cloud` de `msrestazure`</span><span class="sxs-lookup"><span data-stu-id="a50fa-108">You can use the `azure_cloud` module of `msrestazure`</span></span>
+<span data-ttu-id="5573b-108">Puede usar el módulo `azure_cloud` de `msrestazure`</span><span class="sxs-lookup"><span data-stu-id="5573b-108">You can use the `azure_cloud` module of `msrestazure`</span></span>
 
 ```python
 from msrestazure.azure_cloud import AZURE_CHINA_CLOUD
@@ -45,14 +45,14 @@ client = ResourceManagementClient(
 )
 ``` 
   
-<span data-ttu-id="a50fa-109">Las definiciones de nube disponibles son</span><span class="sxs-lookup"><span data-stu-id="a50fa-109">Available cloud definition are</span></span>
-  - <span data-ttu-id="a50fa-110">AZURE_PUBLIC_CLOUD</span><span class="sxs-lookup"><span data-stu-id="a50fa-110">AZURE_PUBLIC_CLOUD</span></span>
-  - <span data-ttu-id="a50fa-111">AZURE_CHINA_CLOUD</span><span class="sxs-lookup"><span data-stu-id="a50fa-111">AZURE_CHINA_CLOUD</span></span>
-  - <span data-ttu-id="a50fa-112">AZURE_US_GOV_CLOUD</span><span class="sxs-lookup"><span data-stu-id="a50fa-112">AZURE_US_GOV_CLOUD</span></span>
-  - <span data-ttu-id="a50fa-113">AZURE_GERMAN_CLOUD</span><span class="sxs-lookup"><span data-stu-id="a50fa-113">AZURE_GERMAN_CLOUD</span></span>
+<span data-ttu-id="5573b-109">Las definiciones de nube disponibles son</span><span class="sxs-lookup"><span data-stu-id="5573b-109">Available cloud definition are</span></span>
+  - <span data-ttu-id="5573b-110">AZURE_PUBLIC_CLOUD</span><span class="sxs-lookup"><span data-stu-id="5573b-110">AZURE_PUBLIC_CLOUD</span></span>
+  - <span data-ttu-id="5573b-111">AZURE_CHINA_CLOUD</span><span class="sxs-lookup"><span data-stu-id="5573b-111">AZURE_CHINA_CLOUD</span></span>
+  - <span data-ttu-id="5573b-112">AZURE_US_GOV_CLOUD</span><span class="sxs-lookup"><span data-stu-id="5573b-112">AZURE_US_GOV_CLOUD</span></span>
+  - <span data-ttu-id="5573b-113">AZURE_GERMAN_CLOUD</span><span class="sxs-lookup"><span data-stu-id="5573b-113">AZURE_GERMAN_CLOUD</span></span>
 
-## <a name="using-your-own-cloud-definition-eg-azure-stack"></a><span data-ttu-id="a50fa-114">Con su propia definición de nube (por ejemplo, Azure Stack)</span><span class="sxs-lookup"><span data-stu-id="a50fa-114">Using your own cloud definition (e.g. Azure Stack)</span></span>
-<span data-ttu-id="a50fa-115">ARM tiene un punto de conexión de metadatos como ayuda:</span><span class="sxs-lookup"><span data-stu-id="a50fa-115">ARM has a metadata endpoint to help you:</span></span>
+## <a name="using-your-own-cloud-definition-eg-azure-stack"></a><span data-ttu-id="5573b-114">Con su propia definición de nube (por ejemplo, Azure Stack)</span><span class="sxs-lookup"><span data-stu-id="5573b-114">Using your own cloud definition (e.g. Azure Stack)</span></span>
+<span data-ttu-id="5573b-115">ARM tiene un punto de conexión de metadatos como ayuda:</span><span class="sxs-lookup"><span data-stu-id="5573b-115">ARM has a metadata endpoint to help you:</span></span>
 
 ```python
 from msrestazure.azure_cloud import get_cloud_from_metadata_endpoint
@@ -71,14 +71,14 @@ client = ResourceManagementClient(
     base_url=mystack_cloud.endpoints.resource_manager
 )
 ```
-## <a name="using-adal"></a><span data-ttu-id="a50fa-116">Uso de ADAL</span><span class="sxs-lookup"><span data-stu-id="a50fa-116">Using ADAL</span></span>
+## <a name="using-adal"></a><span data-ttu-id="5573b-116">Uso de ADAL</span><span class="sxs-lookup"><span data-stu-id="5573b-116">Using ADAL</span></span>
 
-<span data-ttu-id="a50fa-117">Hay algunas cosas a tener en cuenta para conectarse a otra región:</span><span class="sxs-lookup"><span data-stu-id="a50fa-117">To connect to another region, a few things have to be considered:</span></span>
+<span data-ttu-id="5573b-117">Hay algunas cosas a tener en cuenta para conectarse a otra región:</span><span class="sxs-lookup"><span data-stu-id="5573b-117">To connect to another region, a few things have to be considered:</span></span>
 
-- <span data-ttu-id="a50fa-118">¿Cuál es el punto de conexión donde se debe solicitar un token (autenticación)?</span><span class="sxs-lookup"><span data-stu-id="a50fa-118">What is the endpoint where to ask for a token (authentication)?</span></span>
-- <span data-ttu-id="a50fa-119">¿Cuál es el punto de conexión donde se usará este token (uso)?</span><span class="sxs-lookup"><span data-stu-id="a50fa-119">What is the endpoint where I will use this token (usage)?</span></span>
+- <span data-ttu-id="5573b-118">¿Cuál es el punto de conexión donde se debe solicitar un token (autenticación)?</span><span class="sxs-lookup"><span data-stu-id="5573b-118">What is the endpoint where to ask for a token (authentication)?</span></span>
+- <span data-ttu-id="5573b-119">¿Cuál es el punto de conexión donde se usará este token (uso)?</span><span class="sxs-lookup"><span data-stu-id="5573b-119">What is the endpoint where I will use this token (usage)?</span></span>
 
-<span data-ttu-id="a50fa-120">Este es un ejemplo genérico:</span><span class="sxs-lookup"><span data-stu-id="a50fa-120">This is a generic example:</span></span>
+<span data-ttu-id="5573b-120">Este es un ejemplo genérico:</span><span class="sxs-lookup"><span data-stu-id="5573b-120">This is a generic example:</span></span>
 
 ```python
 import adal
@@ -110,7 +110,7 @@ resource_client = ResourceManagementClient(
 )
 ```
 
-### <a name="azure-government"></a><span data-ttu-id="a50fa-121">Azure Government</span><span class="sxs-lookup"><span data-stu-id="a50fa-121">Azure Government</span></span>
+### <a name="azure-government"></a><span data-ttu-id="5573b-121">Azure Government</span><span class="sxs-lookup"><span data-stu-id="5573b-121">Azure Government</span></span>
 ```python
 import adal
 from msrestazure.azure_active_directory import AdalAuthentication
@@ -122,7 +122,7 @@ client_id = 'ABCDEFGH-1234-1234-1234-ABCDEFGHIJKL'
 password = 'password'
 
 # Government
-authentication_endpoint = 'https://login-us.microsoftonline.com/'
+authentication_endpoint = 'https://login.microsoftonline.us/'
 azure_endpoint = 'https://management.usgovcloudapi.net/'
     
 context = adal.AuthenticationContext(authentication_endpoint+tenant)
@@ -141,7 +141,7 @@ resource_client = ResourceManagementClient(
 )
 ```
 
-### <a name="azure-germany"></a><span data-ttu-id="a50fa-122">Azure Alemania</span><span class="sxs-lookup"><span data-stu-id="a50fa-122">Azure Germany</span></span>
+### <a name="azure-germany"></a><span data-ttu-id="5573b-122">Azure Alemania</span><span class="sxs-lookup"><span data-stu-id="5573b-122">Azure Germany</span></span>
 ```python
 import adal
 from msrestazure.azure_active_directory import AdalAuthentication
@@ -172,7 +172,7 @@ resource_client = ResourceManagementClient(
 )
 ```
 
-### <a name="azure-china"></a><span data-ttu-id="a50fa-123">Azure China</span><span class="sxs-lookup"><span data-stu-id="a50fa-123">Azure China</span></span>
+### <a name="azure-china"></a><span data-ttu-id="5573b-123">Azure China</span><span class="sxs-lookup"><span data-stu-id="5573b-123">Azure China</span></span>
 ```python
 import adal
 from msrestazure.azure_active_directory import AdalAuthentication
