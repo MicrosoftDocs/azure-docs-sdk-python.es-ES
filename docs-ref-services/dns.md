@@ -34,7 +34,7 @@ pip install azure-mgmt-dns
 
 ## <a name="create-the-management-client"></a>Creación del cliente de administración
 
-El código siguiente crea una instancia del cliente de administración.
+El siguiente código crea una instancia del cliente de administración.
 
 Debe proporcionar el valor de ``subscription_id``, que se puede obtener en [la lista de suscripciones](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).
 
