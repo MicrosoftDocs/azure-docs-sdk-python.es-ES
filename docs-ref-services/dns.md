@@ -11,34 +11,34 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 0a92b191f245585fd27261e99bea6158ff127a80
-ms.sourcegitcommit: 8a9e4295359a4f47b21908541e2460c333e94a0a
+ms.openlocfilehash: c70c3d44911b28b0a8c92b5f7efeca3bf1611f43
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624961"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52277257"
 ---
-# <a name="azure-dns-libraries-for-python"></a><span data-ttu-id="c5c8b-104">Bibliotecas de Azure DNS para Python</span><span class="sxs-lookup"><span data-stu-id="c5c8b-104">Azure DNS libraries for python</span></span>
+# <a name="azure-dns-libraries-for-python"></a><span data-ttu-id="a269e-104">Bibliotecas de Azure DNS para Python</span><span class="sxs-lookup"><span data-stu-id="a269e-104">Azure DNS libraries for python</span></span>
 
-## <a name="overview"></a><span data-ttu-id="c5c8b-105">Información general</span><span class="sxs-lookup"><span data-stu-id="c5c8b-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="a269e-105">Información general</span><span class="sxs-lookup"><span data-stu-id="a269e-105">Overview</span></span>
 
-<span data-ttu-id="c5c8b-106">[Azure DNS](/azure/dns/dns-overview) es un servicio de hospedaje para dominios DNS que permite resolver nombres mediante la infraestructura de Azure.</span><span class="sxs-lookup"><span data-stu-id="c5c8b-106">[Azure DNS](/azure/dns/dns-overview) is a hosting service for DNS domains that provides DNS resolution via the Azure infrastructure.</span></span>
+<span data-ttu-id="a269e-106">[Azure DNS](/azure/dns/dns-overview) es un servicio de hospedaje para dominios DNS que permite resolver nombres mediante la infraestructura de Azure.</span><span class="sxs-lookup"><span data-stu-id="a269e-106">[Azure DNS](/azure/dns/dns-overview) is a hosting service for DNS domains that provides DNS resolution via the Azure infrastructure.</span></span>
 
-<span data-ttu-id="c5c8b-107">Para empezar a usar Azure DNS, consulte [Introducción a Azure DNS mediante Azure Portal](/azure/dns/dns-getstarted-portal).</span><span class="sxs-lookup"><span data-stu-id="c5c8b-107">To get started with Azure DNS, see [Get started with Azure DNS using the Azure portal](/azure/dns/dns-getstarted-portal).</span></span>
+<span data-ttu-id="a269e-107">Para empezar a usar Azure DNS, consulte [Introducción a Azure DNS mediante Azure Portal](/azure/dns/dns-getstarted-portal).</span><span class="sxs-lookup"><span data-stu-id="a269e-107">To get started with Azure DNS, see [Get started with Azure DNS using the Azure portal](/azure/dns/dns-getstarted-portal).</span></span>
 
-## <a name="management-apipythonapioverviewazurednsmanagement"></a>[<span data-ttu-id="c5c8b-108">API de administración</span><span class="sxs-lookup"><span data-stu-id="c5c8b-108">Management API</span></span>](/python/api/overview/azure/dns/management)
+## <a name="management-apipythonapioverviewazurednsmanagement"></a>[<span data-ttu-id="a269e-108">API de administración</span><span class="sxs-lookup"><span data-stu-id="a269e-108">Management API</span></span>](/python/api/overview/azure/dns/management)
 
 ```bash
 pip install azure-mgmt-dns
 ```
 
-## <a name="create-the-management-client"></a><span data-ttu-id="c5c8b-109">Creación del cliente de administración</span><span class="sxs-lookup"><span data-stu-id="c5c8b-109">Create the management client</span></span>
+## <a name="create-the-management-client"></a><span data-ttu-id="a269e-109">Creación del cliente de administración</span><span class="sxs-lookup"><span data-stu-id="a269e-109">Create the management client</span></span>
 
-<span data-ttu-id="c5c8b-110">El siguiente código crea una instancia del cliente de administración.</span><span class="sxs-lookup"><span data-stu-id="c5c8b-110">The following code creates an instance of the management client.</span></span>
+<span data-ttu-id="a269e-110">El siguiente código crea una instancia del cliente de administración.</span><span class="sxs-lookup"><span data-stu-id="a269e-110">The following code creates an instance of the management client.</span></span>
 
-<span data-ttu-id="c5c8b-111">Debe proporcionar el valor de ``subscription_id``, que se puede obtener en [la lista de suscripciones](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span><span class="sxs-lookup"><span data-stu-id="c5c8b-111">You will need to provide your ``subscription_id`` which can be retrieved from [your subscription list](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span></span>
+<span data-ttu-id="a269e-111">Debe proporcionar el valor de ``subscription_id``, que se puede obtener en [la lista de suscripciones](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span><span class="sxs-lookup"><span data-stu-id="a269e-111">You will need to provide your ``subscription_id`` which can be retrieved from [your subscription list](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span></span>
 
-<span data-ttu-id="c5c8b-112">Consulte [Autenticación de la administración de recursos](/python/azure/python-sdk-azure-authenticate) para más información sobre cómo controlar la autenticación de Azure Active Directory con el SDK de Python, y crear una instancia de ``Credentials``.</span><span class="sxs-lookup"><span data-stu-id="c5c8b-112">See [Resource Management Authentication](/python/azure/python-sdk-azure-authenticate) for details on handling Azure Active Directory authentication with the Python SDK, and creating a ``Credentials`` instance.</span></span>
+<span data-ttu-id="a269e-112">Consulte [Autenticación de la administración de recursos](/python/azure/python-sdk-azure-authenticate) para más información sobre cómo controlar la autenticación de Azure Active Directory con el SDK de Python, y crear una instancia de ``Credentials``.</span><span class="sxs-lookup"><span data-stu-id="a269e-112">See [Resource Management Authentication](/python/azure/python-sdk-azure-authenticate) for details on handling Azure Active Directory authentication with the Python SDK, and creating a ``Credentials`` instance.</span></span>
 
 ```python 
 from azure.mgmt.dns import DnsManagementClient
@@ -59,7 +59,7 @@ dns_client = DnsManagementClient(
 )
 ```
 
-## <a name="create-dns-zone"></a><span data-ttu-id="c5c8b-113">Creación de una zona DNS</span><span class="sxs-lookup"><span data-stu-id="c5c8b-113">Create DNS zone</span></span>
+## <a name="create-dns-zone"></a><span data-ttu-id="a269e-113">Creación de una zona DNS</span><span class="sxs-lookup"><span data-stu-id="a269e-113">Create DNS zone</span></span>
 ```python
 # The only valid value is 'global', otherwise you will get a:
 # The subscription is not registered for the resource type 'dnszones' in the location 'westus'.
@@ -73,7 +73,7 @@ zone = dns_client.zones.create_or_update(
 )
 ```
     
-## <a name="create-a-record-set"></a><span data-ttu-id="c5c8b-114">Creación de un conjunto de registros</span><span class="sxs-lookup"><span data-stu-id="c5c8b-114">Create a Record Set</span></span>
+## <a name="create-a-record-set"></a><span data-ttu-id="a269e-114">Creación de un conjunto de registros</span><span class="sxs-lookup"><span data-stu-id="a269e-114">Create a Record Set</span></span>
 ```python
 record_set = dns_client.record_sets.create_or_update(
     'MyResourceGroup',
@@ -95,4 +95,4 @@ record_set = dns_client.record_sets.create_or_update(
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="c5c8b-115">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="c5c8b-115">Explore the Management APIs</span></span>](/python/api/overview/azure/dns/management)
+> [<span data-ttu-id="a269e-115">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="a269e-115">Explore the Management APIs</span></span>](/python/api/overview/azure/dns/management)

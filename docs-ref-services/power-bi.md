@@ -11,22 +11,22 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: d58752f58a39fad9910cc7bd1f8170516c39d863
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: fc37bdf184ea5204a291d6f23fe699c70bf87b71
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29479028"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52273011"
 ---
-# <a name="azure-powerbi-libraries-for-python"></a><span data-ttu-id="8ea7e-104">Bibliotecas de Azure PowerBI para Python</span><span class="sxs-lookup"><span data-stu-id="8ea7e-104">Azure PowerBI libraries for python</span></span>
+# <a name="azure-powerbi-libraries-for-python"></a><span data-ttu-id="67d91-104">Bibliotecas de Azure PowerBI para Python</span><span class="sxs-lookup"><span data-stu-id="67d91-104">Azure PowerBI libraries for python</span></span>
 
-## <a name="install-the-libraries"></a><span data-ttu-id="8ea7e-105">Instalación de las bibliotecas</span><span class="sxs-lookup"><span data-stu-id="8ea7e-105">Install the libraries</span></span>
+## <a name="install-the-libraries"></a><span data-ttu-id="67d91-105">Instalación de las bibliotecas</span><span class="sxs-lookup"><span data-stu-id="67d91-105">Install the libraries</span></span>
 
 
-### <a name="management"></a><span data-ttu-id="8ea7e-106">Administración</span><span class="sxs-lookup"><span data-stu-id="8ea7e-106">Management</span></span>
+### <a name="management"></a><span data-ttu-id="67d91-106">Administración</span><span class="sxs-lookup"><span data-stu-id="67d91-106">Management</span></span>
 
 ```bash
 pip install azure-mgmt-powerblembedded
 ```
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="8ea7e-107">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="8ea7e-107">Explore the Management APIs</span></span>](/python/api/overview/azure/powerbi/management)
+> [<span data-ttu-id="67d91-107">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="67d91-107">Explore the Management APIs</span></span>](/python/api/overview/azure/powerbi/management)
