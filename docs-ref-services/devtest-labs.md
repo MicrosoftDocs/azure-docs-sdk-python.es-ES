@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 5807b85f02c05c2a767a2df2e89d9e98b7e6e05b
-ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
+ms.openlocfilehash: 80c9b90c9527503f9cc3782b429b4da1d4ff514f
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "29551578"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52277009"
 ---
 # <a name="azure-devtest-labs-libraries-for-python"></a>Bibliotecas de Azure DevTest Labs para Python
 
@@ -28,7 +28,7 @@ pip install azure-mgmt-devtestlabs
 
 ## <a name="create-the-management-client"></a>Creación del cliente de administración
 
-El código siguiente crea una instancia del cliente de administración.
+El siguiente código crea una instancia del cliente de administración.
 
 Debe proporcionar el valor de ``subscription_id``, que se puede obtener en [la lista de suscripciones](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).
 

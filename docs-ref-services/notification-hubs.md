@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 66b452a40fd524672f4dad92a9d1bd0ffb77a99d
-ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
+ms.openlocfilehash: 3a9cc087d315ee2a274d3ef00623b304280017e5
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "29551588"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52277247"
 ---
 # <a name="azure-notification-hubs-libraries-for-python"></a>Bibliotecas de Azure Notification Hubs para Python
 
@@ -28,7 +28,7 @@ pip install azure-mgmt-notificationhubs
 
 ## <a name="create-the-management-client"></a>Creación del cliente de administración
 
-El código siguiente crea una instancia del cliente de administración.
+El siguiente código crea una instancia del cliente de administración.
 
 Debe proporcionar el valor de ``subscription_id``, que se puede obtener en [la lista de suscripciones](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).
 

@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 1f1dbaa77ee02a1da9386642e001f0a1a63a6599
-ms.sourcegitcommit: 61cc12fd4bb1a3ad5f9b79d1c616f005bc21c5d9
+ms.openlocfilehash: 736b2dd747842caa50418afc8219dafae655db39
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30849776"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52277462"
 ---
 # <a name="azure-cognitive-services-modules-for-python"></a>Módulos de Azure Cognitive Services para Python
 
@@ -54,7 +54,7 @@ pip install azure-cognitiveservices-vision-computervision
 
 [Obtenga más información](/azure/cognitive-services/content-moderator/overview) acerca del servicio Content Moderator.
 
-### <a name="custom-vision-service"></a>Servicio de visión personalizada
+### <a name="custom-vision-service"></a>Custom Vision Service
 
 Cargue imágenes para entrenar y personalizar un modelo de visión de equipo para sus necesidades específicas. Una vez entrenado el modelo, puede usar la API para etiquetar imágenes utilizando el modelo y evaluar los resultados para mejorar el clasificador.
 
@@ -169,7 +169,7 @@ pip install azure-cognitiveservices-search-newssearch
 
 ## <a name="language-modules"></a>Modelo de lenguaje
 
-### <a name="text-analytics"></a>Análisis de texto 
+### <a name="text-analytics"></a>Text Analytics 
 
 Text Analytics API es un servicio en la nube que realiza el procesamiento del lenguaje natural en textos sin formato. La API incluye tres funciones principales:
 

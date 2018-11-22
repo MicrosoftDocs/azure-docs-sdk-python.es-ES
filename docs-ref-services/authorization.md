@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: a3db490357ec35c0780d7dd16114b9041458373d
-ms.sourcegitcommit: 86f7f40295271ef94272642efb89b471aae99a2c
+ms.openlocfilehash: 8709bbd3cff448c7beb394621b163a4b3e3c3cd8
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2018
-ms.locfileid: "35720046"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52276769"
 ---
 # <a name="azure-authorization-libraries-for-python"></a>Bibliotecas de Azure Authorization para Python
 
@@ -28,7 +28,7 @@ pip install azure-mgmt-authorization
 
 ## <a name="create-the-management-client"></a>Creación del cliente de administración
 
-El código siguiente crea una instancia del cliente de administración.
+El siguiente código crea una instancia del cliente de administración.
 
 Debe proporcionar el valor de ``subscription_id``, que se puede obtener en [la lista de suscripciones](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).
 

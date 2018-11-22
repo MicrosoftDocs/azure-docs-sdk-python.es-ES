@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 0a1a5efa299f66ff8c31e8224e29dd7bcdc41783
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 0864c83eba43f97a606ae817f1a0ec2dd1ea787a
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478778"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52279248"
 ---
 # <a name="azure-iot-hub-libraries-for-python"></a>Bibliotecas de Azure IoT Hub para Python
 
@@ -28,7 +28,7 @@ pip install azure-mgmt-iothub
 
 ## <a name="create-the-management-client"></a>Creación del cliente de administración
 
-El código siguiente crea una instancia del cliente de administración.
+El siguiente código crea una instancia del cliente de administración.
 
 Debe proporcionar el valor de ``subscription_id``, que se puede obtener en [la lista de suscripciones](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).
 

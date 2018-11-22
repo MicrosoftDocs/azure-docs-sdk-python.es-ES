@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 92d6dd6ce55964bc48bb9bc654e8dec25f6b8344
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 06e6c8786ebbd88b7d3996b640af96a23cd5689b
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478888"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52275539"
 ---
 # <a name="azure-cdn-libraries-for-python"></a>Bibliotecas Azure CDN para Python
 
@@ -24,7 +24,7 @@ ms.locfileid: "29478888"
 
 [Azure Content Delivery Network (CDN)](https://docs.microsoft.com/en-us/azure/cdn/cdn-overview) permite proporcionar memorias caché de contenido web para garantizar la disponibilidad de suficiente ancho de banda en todo el mundo.
 
-Para empezar a trabajar con la red CDN de Azure, consulte [Introducción a la red CDN de Azure](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-new-endpoint).
+Para empezar a trabajar con Azure CDN, consulte [Introducción a Azure CDN](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-new-endpoint).
 
 ## <a name="management-apis"></a>API de administración
 
