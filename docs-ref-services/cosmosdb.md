@@ -9,12 +9,12 @@ ms.date: 03/20/2018
 ms.topic: article
 ms.devlang: python
 ms.service: cosmosdb
-ms.openlocfilehash: 391b556ece7d818406fa501763814eb7f0d50d22
-ms.sourcegitcommit: 41e6e6b5469271f4ec497a322b460e2a2af2c73d
+ms.openlocfilehash: c2f3ea017a8864d4d2fb74a439c420f1f0313082
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30204142"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52276799"
 ---
 # <a name="azure-cosmos-db-libraries-for-python"></a>Bibliotecas de Azure Cosmos DB para Python
 
@@ -84,6 +84,14 @@ print(results)
 
 ## <a name="samples"></a>Ejemplos
 
-[Desarrollo de una aplicación de Python con Azure Cosmos DB](https://azure.microsoft.com/resources/samples/azure-cosmos-db-documentdb-python-getting-started/)
+* [Desarrollo de una aplicación de Python para acceder a los datos almacenados en la cuenta de SQL API de Azure Cosmos DB y administrarlos](https://github.com/Azure-Samples/azure-cosmos-db-python-getting-started.git)
+
+* [Desarrollo de una aplicación de Python para acceder a los datos almacenados en la cuenta de MongoDB API de Azure Cosmos DB y administrarlos](https://github.com/Azure-Samples/CosmosDB-Flask-Mongo-Sample.git)
+
+* [Desarrollo de una aplicación de Python para acceder a los datos almacenados en la cuenta de Gremlin API de Azure Cosmos DB y administrarlos](https://github.com/Azure-Samples/azure-cosmos-db-graph-python-getting-started.git)
+
+* [Desarrollo de una aplicación de Python para acceder a los datos almacenados en la cuenta de Cassandra API de Azure Cosmos DB y administrarlos](https://github.com/Azure-Samples/azure-cosmos-db-cassandra-python-getting-started.git)
+
+* [Desarrollo de una aplicación de Python para acceder a los datos almacenados en la cuenta de Table API de Azure Cosmos DB y administrarlos](https://github.com/Azure-Samples/storage-python-getting-started.git)
 
 
