@@ -149,7 +149,7 @@ Para más información acerca de cómo obtener credenciales para autenticarse co
 #### <a name="example"></a>Ejemplo
 En este ejemplo, se creará una nueva base de datos de Postgres en nuestro servidor Postgres existente.
 ```python
-from azure.mgtm.rdbms.postgresql import PostgreSQLManagementClient
+from azure.mgmt.rdbms.postgresql import PostgreSQLManagementClient
 
 SUBSCRIPTION_ID = "YOUR_AZURE_SUBSCRIPTION_ID"
 RESOURCE_GROUP = "YOUR_AZURE_RESOURCE_GROUP_WITH_POSTGRES"
