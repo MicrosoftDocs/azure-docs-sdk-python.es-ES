@@ -10,12 +10,12 @@ ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.openlocfilehash: e3cd84288ad8d49cfcd673506e2db150c02e7918
-ms.sourcegitcommit: 16eecfc4ed0e2a8344ce5887327cdf2619ba89e4
+ms.openlocfilehash: 402e87ae81e6df64b040293992244902313e5b1b
+ms.sourcegitcommit: fba77bdf8eb9f49621be94544d9fef88aff98c14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2018
-ms.locfileid: "39189595"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54747725"
 ---
 # <a name="azure-mysqlpostgresql-libraries-for-python"></a>Bibliotecas de Azure MySQL/PostgreSQL para Python
 
@@ -149,7 +149,7 @@ Para más información acerca de cómo obtener credenciales para autenticarse co
 #### <a name="example"></a>Ejemplo
 En este ejemplo, se creará una nueva base de datos de Postgres en nuestro servidor Postgres existente.
 ```python
-from azure.mgtm.rdbms.postgresql import PostgreSQLManagementClient
+from azure.mgmt.rdbms.postgresql import PostgreSQLManagementClient
 
 SUBSCRIPTION_ID = "YOUR_AZURE_SUBSCRIPTION_ID"
 RESOURCE_GROUP = "YOUR_AZURE_RESOURCE_GROUP_WITH_POSTGRES"
