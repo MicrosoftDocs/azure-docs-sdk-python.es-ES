@@ -1,20 +1,20 @@
 ---
-title: Versión preliminar del SDK de Azure HDInsight para Python
+title: SDK de Azure HDInsight para Python
 description: Referencia del SDK de Azure HDInsight para Python. El SDK de HDInsight para Python proporciona clases y métodos que permiten administrar los clústeres de HDInsight.
 ms.service: hdinsight
 author: tylerfox
 ms.author: tyfox
-ms.date: 09/18/2018
+ms.date: 04/10/2019
 ms.topic: reference
 ms.devlang: python
-ms.openlocfilehash: 8d081739a3984e1cd3f7bbf31fcb44d63cfb6947
-ms.sourcegitcommit: fba77bdf8eb9f49621be94544d9fef88aff98c14
+ms.openlocfilehash: f16e5da474e1c506c800b860b451754a6bdc75bc
+ms.sourcegitcommit: 3c6087cbc1fee5a2c88c40fe96d351375c6c6377
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54747715"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504552"
 ---
-# <a name="hdinsight-python-management-sdk-preview"></a>Versión preliminar del SDK de administración de HDInsight para Python
+# <a name="hdinsight-sdk-for-python"></a>SDK de HDInsight para Python
 
 ## <a name="overview"></a>Información general
 
@@ -32,7 +32,7 @@ El SDK de HDInsight para Python se puede encontrar en el [Índice de paquetes de
 
 `pip install azure-mgmt-hdinsight`
 
-## <a name="authentication"></a>Autenticación
+## <a name="authentication"></a>Authentication
 
 En primer lugar, el SDK necesita autenticarse en su suscripción de Azure.  Siga el ejemplo siguiente para crear una entidad de servicio y usarla para la autenticación. Una vez hecho esto, tendrá una instancia de `HDInsightManagementClient`, que contiene muchos métodos que pueden usarse para realizar operaciones de administración (se describen en las secciones siguientes).
 
@@ -235,6 +235,10 @@ client.clusters.create(
         properties=params
     ))
 ```
+
+#### <a name="samples"></a>Ejemplos
+
+También hay disponibles ejemplos de código para crear varios tipos comunes de clústeres de HDInsight: [Ejemplos de HDInsight para Python](https://github.com/Azure-Samples/hdinsight-python-sdk-samples)
 
 ### <a name="get-cluster-details"></a>Obtención de los detalles del clúster
 
