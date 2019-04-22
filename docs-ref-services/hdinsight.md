@@ -7,12 +7,12 @@ ms.author: tyfox
 ms.date: 04/10/2019
 ms.topic: reference
 ms.devlang: python
-ms.openlocfilehash: f16e5da474e1c506c800b860b451754a6bdc75bc
-ms.sourcegitcommit: 3c6087cbc1fee5a2c88c40fe96d351375c6c6377
+ms.openlocfilehash: ea9599be9fead5f964fbd4ce4e4bdc78a445918c
+ms.sourcegitcommit: 375a1f9180eb1323fe2af0a7e28fd4676973c68e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504552"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59586823"
 ---
 # <a name="hdinsight-sdk-for-python"></a>SDK de HDInsight para Python
 
@@ -131,7 +131,11 @@ client = HDInsightManagementClient(credentials, SUBSCRIPTION_ID)
 
 ### <a name="create-a-cluster"></a>Creación de un clúster
 
-Para crear un nuevo clúster, se puede llamar a `client.clusters.create()`. 
+Para crear un nuevo clúster, se puede llamar a `client.clusters.create()`.
+
+#### <a name="samples"></a>Ejemplos
+
+Hay disponibles ejemplos de código para crear varios tipos comunes de clústeres de HDInsight: [Ejemplos de HDInsight para Python](https://github.com/Azure-Samples/hdinsight-python-sdk-samples)
 
 #### <a name="example"></a>Ejemplo
 
@@ -235,10 +239,6 @@ client.clusters.create(
         properties=params
     ))
 ```
-
-#### <a name="samples"></a>Ejemplos
-
-También hay disponibles ejemplos de código para crear varios tipos comunes de clústeres de HDInsight: [Ejemplos de HDInsight para Python](https://github.com/Azure-Samples/hdinsight-python-sdk-samples)
 
 ### <a name="get-cluster-details"></a>Obtención de los detalles del clúster
 
