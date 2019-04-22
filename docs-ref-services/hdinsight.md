@@ -7,47 +7,47 @@ ms.author: tyfox
 ms.date: 04/10/2019
 ms.topic: reference
 ms.devlang: python
-ms.openlocfilehash: f16e5da474e1c506c800b860b451754a6bdc75bc
-ms.sourcegitcommit: 3c6087cbc1fee5a2c88c40fe96d351375c6c6377
+ms.openlocfilehash: ea9599be9fead5f964fbd4ce4e4bdc78a445918c
+ms.sourcegitcommit: 375a1f9180eb1323fe2af0a7e28fd4676973c68e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504552"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59586823"
 ---
-# <a name="hdinsight-sdk-for-python"></a><span data-ttu-id="2dbd1-104">SDK de HDInsight para Python</span><span class="sxs-lookup"><span data-stu-id="2dbd1-104">HDInsight SDK for Python</span></span>
+# <a name="hdinsight-sdk-for-python"></a><span data-ttu-id="3c90a-104">SDK de HDInsight para Python</span><span class="sxs-lookup"><span data-stu-id="3c90a-104">HDInsight SDK for Python</span></span>
 
-## <a name="overview"></a><span data-ttu-id="2dbd1-105">Información general</span><span class="sxs-lookup"><span data-stu-id="2dbd1-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="3c90a-105">Información general</span><span class="sxs-lookup"><span data-stu-id="3c90a-105">Overview</span></span>
 
-<span data-ttu-id="2dbd1-106">El SDK de HDInsight para Python proporciona clases y métodos que permiten administrar los clústeres de HDInsight.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-106">The HDInsight SDK for Python provides classes and methods that allow you to manage your HDInsight clusters.</span></span> <span data-ttu-id="2dbd1-107">Incluye operaciones para crear, eliminar, actualizar, enumerar, cambiar tamaño, ejecutar acciones de script, supervisar y obtener propiedades de clústeres de HDInsight, entre otras.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-107">It includes operations to create, delete, update, list, resize, execute script actions, monitor, get properties of HDInsight clusters, and more.</span></span>
+<span data-ttu-id="3c90a-106">El SDK de HDInsight para Python proporciona clases y métodos que permiten administrar los clústeres de HDInsight.</span><span class="sxs-lookup"><span data-stu-id="3c90a-106">The HDInsight SDK for Python provides classes and methods that allow you to manage your HDInsight clusters.</span></span> <span data-ttu-id="3c90a-107">Incluye operaciones para crear, eliminar, actualizar, enumerar, cambiar tamaño, ejecutar acciones de script, supervisar y obtener propiedades de clústeres de HDInsight, entre otras.</span><span class="sxs-lookup"><span data-stu-id="3c90a-107">It includes operations to create, delete, update, list, resize, execute script actions, monitor, get properties of HDInsight clusters, and more.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="2dbd1-108">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="2dbd1-108">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="3c90a-108">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="3c90a-108">Prerequisites</span></span>
 
-* <span data-ttu-id="2dbd1-109">Una cuenta de Azure.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-109">An Azure account.</span></span> <span data-ttu-id="2dbd1-110">Si no tiene una, [obtenga la versión de evaluación gratuita](https://azure.microsoft.com/free/).</span><span class="sxs-lookup"><span data-stu-id="2dbd1-110">If you don't have one, [get a free trial](https://azure.microsoft.com/free/).</span></span>
-* [<span data-ttu-id="2dbd1-111">Python</span><span class="sxs-lookup"><span data-stu-id="2dbd1-111">Python</span></span>](https://www.python.org/downloads/)
-* [<span data-ttu-id="2dbd1-112">pip</span><span class="sxs-lookup"><span data-stu-id="2dbd1-112">pip</span></span>](https://pypi.org/project/pip/#description)
+* <span data-ttu-id="3c90a-109">Una cuenta de Azure.</span><span class="sxs-lookup"><span data-stu-id="3c90a-109">An Azure account.</span></span> <span data-ttu-id="3c90a-110">Si no tiene una, [obtenga la versión de evaluación gratuita](https://azure.microsoft.com/free/).</span><span class="sxs-lookup"><span data-stu-id="3c90a-110">If you don't have one, [get a free trial](https://azure.microsoft.com/free/).</span></span>
+* [<span data-ttu-id="3c90a-111">Python</span><span class="sxs-lookup"><span data-stu-id="3c90a-111">Python</span></span>](https://www.python.org/downloads/)
+* [<span data-ttu-id="3c90a-112">pip</span><span class="sxs-lookup"><span data-stu-id="3c90a-112">pip</span></span>](https://pypi.org/project/pip/#description)
 
-## <a name="sdk-installation"></a><span data-ttu-id="2dbd1-113">Instalación del SDK</span><span class="sxs-lookup"><span data-stu-id="2dbd1-113">SDK Installation</span></span>
+## <a name="sdk-installation"></a><span data-ttu-id="3c90a-113">Instalación del SDK</span><span class="sxs-lookup"><span data-stu-id="3c90a-113">SDK Installation</span></span>
 
-<span data-ttu-id="2dbd1-114">El SDK de HDInsight para Python se puede encontrar en el [Índice de paquetes de Python](https://pypi.org/project/azure-mgmt-hdinsight/) y se puede instalar mediante la ejecución de:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-114">The HDInsight SDK for Python can be found in the [Python Package Index](https://pypi.org/project/azure-mgmt-hdinsight/) and can be installed by running:</span></span> 
+<span data-ttu-id="3c90a-114">El SDK de HDInsight para Python se puede encontrar en el [Índice de paquetes de Python](https://pypi.org/project/azure-mgmt-hdinsight/) y se puede instalar mediante la ejecución de:</span><span class="sxs-lookup"><span data-stu-id="3c90a-114">The HDInsight SDK for Python can be found in the [Python Package Index](https://pypi.org/project/azure-mgmt-hdinsight/) and can be installed by running:</span></span> 
 
 `pip install azure-mgmt-hdinsight`
 
-## <a name="authentication"></a><span data-ttu-id="2dbd1-115">Authentication</span><span class="sxs-lookup"><span data-stu-id="2dbd1-115">Authentication</span></span>
+## <a name="authentication"></a><span data-ttu-id="3c90a-115">Authentication</span><span class="sxs-lookup"><span data-stu-id="3c90a-115">Authentication</span></span>
 
-<span data-ttu-id="2dbd1-116">En primer lugar, el SDK necesita autenticarse en su suscripción de Azure.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-116">The SDK first needs to be authenticated with your Azure subscription.</span></span>  <span data-ttu-id="2dbd1-117">Siga el ejemplo siguiente para crear una entidad de servicio y usarla para la autenticación.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-117">Follow the example below to create a service principal and use it to authenticate.</span></span> <span data-ttu-id="2dbd1-118">Una vez hecho esto, tendrá una instancia de `HDInsightManagementClient`, que contiene muchos métodos que pueden usarse para realizar operaciones de administración (se describen en las secciones siguientes).</span><span class="sxs-lookup"><span data-stu-id="2dbd1-118">After this is done, you will have an instance of an `HDInsightManagementClient`, which contains many methods (outlined in below sections) that can be used to perform management operations.</span></span>
+<span data-ttu-id="3c90a-116">En primer lugar, el SDK necesita autenticarse en su suscripción de Azure.</span><span class="sxs-lookup"><span data-stu-id="3c90a-116">The SDK first needs to be authenticated with your Azure subscription.</span></span>  <span data-ttu-id="3c90a-117">Siga el ejemplo siguiente para crear una entidad de servicio y usarla para la autenticación.</span><span class="sxs-lookup"><span data-stu-id="3c90a-117">Follow the example below to create a service principal and use it to authenticate.</span></span> <span data-ttu-id="3c90a-118">Una vez hecho esto, tendrá una instancia de `HDInsightManagementClient`, que contiene muchos métodos que pueden usarse para realizar operaciones de administración (se describen en las secciones siguientes).</span><span class="sxs-lookup"><span data-stu-id="3c90a-118">After this is done, you will have an instance of an `HDInsightManagementClient`, which contains many methods (outlined in below sections) that can be used to perform management operations.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2dbd1-119">Además del siguiente ejemplo, hay otras maneras de autenticar que podrían ser más adecuadas para sus necesidades.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-119">There are other ways to authenticate besides the below example that could potentially be better suited for your needs.</span></span> <span data-ttu-id="2dbd1-120">Todos los métdosos se describen aquí: [Autenticación con las bibliotecas de administración de Azure para Python](https://docs.microsoft.com/en-us/python/azure/python-sdk-azure-authenticate?view=azure-python)</span><span class="sxs-lookup"><span data-stu-id="2dbd1-120">All methods are outlined here: [Authenticate with the Azure Management Libraries for Python](https://docs.microsoft.com/en-us/python/azure/python-sdk-azure-authenticate?view=azure-python)</span></span>
+> <span data-ttu-id="3c90a-119">Además del siguiente ejemplo, hay otras maneras de autenticar que podrían ser más adecuadas para sus necesidades.</span><span class="sxs-lookup"><span data-stu-id="3c90a-119">There are other ways to authenticate besides the below example that could potentially be better suited for your needs.</span></span> <span data-ttu-id="3c90a-120">Todos los métdosos se describen aquí: [Autenticación con las bibliotecas de administración de Azure para Python](https://docs.microsoft.com/en-us/python/azure/python-sdk-azure-authenticate?view=azure-python)</span><span class="sxs-lookup"><span data-stu-id="3c90a-120">All methods are outlined here: [Authenticate with the Azure Management Libraries for Python](https://docs.microsoft.com/en-us/python/azure/python-sdk-azure-authenticate?view=azure-python)</span></span>
 
-### <a name="authentication-example-using-a-service-principal"></a><span data-ttu-id="2dbd1-121">Ejemplo de autenticación con una entidad de servicio</span><span class="sxs-lookup"><span data-stu-id="2dbd1-121">Authentication Example Using a Service Principal</span></span>
+### <a name="authentication-example-using-a-service-principal"></a><span data-ttu-id="3c90a-121">Ejemplo de autenticación con una entidad de servicio</span><span class="sxs-lookup"><span data-stu-id="3c90a-121">Authentication Example Using a Service Principal</span></span>
 
-<span data-ttu-id="2dbd1-122">En primer lugar, inicie sesión en [Azure Cloud Shell](https://shell.azure.com/bash).</span><span class="sxs-lookup"><span data-stu-id="2dbd1-122">First, login to [Azure Cloud Shell](https://shell.azure.com/bash).</span></span> <span data-ttu-id="2dbd1-123">Compruebe que está usando la suscripción en la que desea crear la entidad de servicio.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-123">Verify you are currently using the subscription in which you want the service principal created.</span></span> 
+<span data-ttu-id="3c90a-122">En primer lugar, inicie sesión en [Azure Cloud Shell](https://shell.azure.com/bash).</span><span class="sxs-lookup"><span data-stu-id="3c90a-122">First, login to [Azure Cloud Shell](https://shell.azure.com/bash).</span></span> <span data-ttu-id="3c90a-123">Compruebe que está usando la suscripción en la que desea crear la entidad de servicio.</span><span class="sxs-lookup"><span data-stu-id="3c90a-123">Verify you are currently using the subscription in which you want the service principal created.</span></span> 
 
 ```azurecli-interactive
 az account show
 ```
 
-<span data-ttu-id="2dbd1-124">La información de la suscripción se muestra en formato JSON.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-124">Your subscription information is displayed as JSON.</span></span>
+<span data-ttu-id="3c90a-124">La información de la suscripción se muestra en formato JSON.</span><span class="sxs-lookup"><span data-stu-id="3c90a-124">Your subscription information is displayed as JSON.</span></span>
 
 ```json
 {
@@ -65,24 +65,24 @@ az account show
 }
 ```
 
-<span data-ttu-id="2dbd1-125">Si no ha iniciado sesión en la suscripción correcta, ejecute lo siguiente para seleccionar la correcta:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-125">If you're not logged into the correct subscription, select the correct one by running:</span></span> 
+<span data-ttu-id="3c90a-125">Si no ha iniciado sesión en la suscripción correcta, ejecute lo siguiente para seleccionar la correcta:</span><span class="sxs-lookup"><span data-stu-id="3c90a-125">If you're not logged into the correct subscription, select the correct one by running:</span></span> 
 ```azurecli-interactive
 az account set -s <name or ID of subscription>
 ```
 
 > [!IMPORTANT]
-> <span data-ttu-id="2dbd1-126">Si aún no ha registrado el proveedor de recursos de HDInsight con otro método (por ejemplo, creando un clúster de HDInsight mediante Azure Portal), deberá hacerlo una vez antes de poder realizar la autenticación.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-126">If you have not already registered the HDInsight Resource Provider by another method (such as by creating an HDInsight Cluster through the Azure Portal), you need to do this once before you can authenticate.</span></span> <span data-ttu-id="2dbd1-127">Se puede hacer desde [Azure Cloud Shell](https://shell.azure.com/bash), con el siguiente comando:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-127">This can be done from the [Azure Cloud Shell](https://shell.azure.com/bash) by running the following command:</span></span>
+> <span data-ttu-id="3c90a-126">Si aún no ha registrado el proveedor de recursos de HDInsight con otro método (por ejemplo, creando un clúster de HDInsight mediante Azure Portal), deberá hacerlo una vez antes de poder realizar la autenticación.</span><span class="sxs-lookup"><span data-stu-id="3c90a-126">If you have not already registered the HDInsight Resource Provider by another method (such as by creating an HDInsight Cluster through the Azure Portal), you need to do this once before you can authenticate.</span></span> <span data-ttu-id="3c90a-127">Se puede hacer desde [Azure Cloud Shell](https://shell.azure.com/bash), con el siguiente comando:</span><span class="sxs-lookup"><span data-stu-id="3c90a-127">This can be done from the [Azure Cloud Shell](https://shell.azure.com/bash) by running the following command:</span></span>
 >```azurecli-interactive
 >az provider register --namespace Microsoft.HDInsight
 >```
 
-<span data-ttu-id="2dbd1-128">A continuación, elija un nombre para la entidad de servicio y créela con el siguiente comando:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-128">Next, choose a name for your service principal and create it with the following command:</span></span>
+<span data-ttu-id="3c90a-128">A continuación, elija un nombre para la entidad de servicio y créela con el siguiente comando:</span><span class="sxs-lookup"><span data-stu-id="3c90a-128">Next, choose a name for your service principal and create it with the following command:</span></span>
 
 ```azurecli-interactive
 az ad sp create-for-rbac --name <Service Principal Name> --sdk-auth
 ```
 
-<span data-ttu-id="2dbd1-129">La información de la entidad de servicio se muestra con formato JSON.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-129">The service principal information is displayed as JSON.</span></span>
+<span data-ttu-id="3c90a-129">La información de la entidad de servicio se muestra con formato JSON.</span><span class="sxs-lookup"><span data-stu-id="3c90a-129">The service principal information is displayed as JSON.</span></span>
 
 ```json
 {
@@ -98,7 +98,7 @@ az ad sp create-for-rbac --name <Service Principal Name> --sdk-auth
   "managementEndpointUrl": "https://management.core.windows.net/"
 }
 ```
-<span data-ttu-id="2dbd1-130">Copie el siguiente fragmento de código de Python y rellene `TENANT_ID`, `CLIENT_ID`, `CLIENT_SECRET` y `SUBSCRIPTION_ID` con las cadenas del código JSON que se devolvió después de ejecutar el comando para crear la entidad de servicio.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-130">Copy the below Python snippet and fill in `TENANT_ID`, `CLIENT_ID`, `CLIENT_SECRET`, and `SUBSCRIPTION_ID` with the strings from the JSON that was returned after running the command to create the service principal.</span></span>
+<span data-ttu-id="3c90a-130">Copie el siguiente fragmento de código de Python y rellene `TENANT_ID`, `CLIENT_ID`, `CLIENT_SECRET` y `SUBSCRIPTION_ID` con las cadenas del código JSON que se devolvió después de ejecutar el comando para crear la entidad de servicio.</span><span class="sxs-lookup"><span data-stu-id="3c90a-130">Copy the below Python snippet and fill in `TENANT_ID`, `CLIENT_ID`, `CLIENT_SECRET`, and `SUBSCRIPTION_ID` with the strings from the JSON that was returned after running the command to create the service principal.</span></span>
 
 ```python
 from azure.mgmt.hdinsight import HDInsightManagementClient
@@ -124,40 +124,44 @@ client = HDInsightManagementClient(credentials, SUBSCRIPTION_ID)
 ```
 
 
-## <a name="cluster-management"></a><span data-ttu-id="2dbd1-131">Administración de clústeres</span><span class="sxs-lookup"><span data-stu-id="2dbd1-131">Cluster Management</span></span>
+## <a name="cluster-management"></a><span data-ttu-id="3c90a-131">Administración de clústeres</span><span class="sxs-lookup"><span data-stu-id="3c90a-131">Cluster Management</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2dbd1-132">En esta sección se da por supuesto que ya ha autenticado y construido una instancia de `HDInsightManagementClient`, y que la ha almacenado en una variable llamada `client`.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-132">This section assumes you have already authenticated and constructed an `HDInsightManagementClient` instance and store it in a variable called `client`.</span></span> <span data-ttu-id="2dbd1-133">En la sección Autenticación anterior encontrará las instrucciones para autenticarse y obtener un `HDInsightManagementClient`.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-133">Instructions for authenticating and obtaining an `HDInsightManagementClient` can be found in the Authentication section above.</span></span>
+> <span data-ttu-id="3c90a-132">En esta sección se da por supuesto que ya ha autenticado y construido una instancia de `HDInsightManagementClient`, y que la ha almacenado en una variable llamada `client`.</span><span class="sxs-lookup"><span data-stu-id="3c90a-132">This section assumes you have already authenticated and constructed an `HDInsightManagementClient` instance and store it in a variable called `client`.</span></span> <span data-ttu-id="3c90a-133">En la sección Autenticación anterior encontrará las instrucciones para autenticarse y obtener un `HDInsightManagementClient`.</span><span class="sxs-lookup"><span data-stu-id="3c90a-133">Instructions for authenticating and obtaining an `HDInsightManagementClient` can be found in the Authentication section above.</span></span>
 
-### <a name="create-a-cluster"></a><span data-ttu-id="2dbd1-134">Creación de un clúster</span><span class="sxs-lookup"><span data-stu-id="2dbd1-134">Create a Cluster</span></span>
+### <a name="create-a-cluster"></a><span data-ttu-id="3c90a-134">Creación de un clúster</span><span class="sxs-lookup"><span data-stu-id="3c90a-134">Create a Cluster</span></span>
 
-<span data-ttu-id="2dbd1-135">Para crear un nuevo clúster, se puede llamar a `client.clusters.create()`.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-135">A new cluster can be created by calling `client.clusters.create()`.</span></span> 
+<span data-ttu-id="3c90a-135">Para crear un nuevo clúster, se puede llamar a `client.clusters.create()`.</span><span class="sxs-lookup"><span data-stu-id="3c90a-135">A new cluster can be created by calling `client.clusters.create()`.</span></span>
 
-#### <a name="example"></a><span data-ttu-id="2dbd1-136">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="2dbd1-136">Example</span></span>
+#### <a name="samples"></a><span data-ttu-id="3c90a-136">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="3c90a-136">Samples</span></span>
 
-<span data-ttu-id="2dbd1-137">En este ejemplo se muestra cómo crear un clúster de Spark con dos nodos principales y un nodo de trabajo.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-137">This example demonstrates how to create a Spark cluster with 2 head nodes and 1 worker node.</span></span>
+<span data-ttu-id="3c90a-137">Hay disponibles ejemplos de código para crear varios tipos comunes de clústeres de HDInsight: [Ejemplos de HDInsight para Python](https://github.com/Azure-Samples/hdinsight-python-sdk-samples)</span><span class="sxs-lookup"><span data-stu-id="3c90a-137">Code samples for creating several common types of HDInsight clusters are available: [HDInsight Python Samples](https://github.com/Azure-Samples/hdinsight-python-sdk-samples).</span></span>
+
+#### <a name="example"></a><span data-ttu-id="3c90a-138">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="3c90a-138">Example</span></span>
+
+<span data-ttu-id="3c90a-139">En este ejemplo se muestra cómo crear un clúster de Spark con dos nodos principales y un nodo de trabajo.</span><span class="sxs-lookup"><span data-stu-id="3c90a-139">This example demonstrates how to create a Spark cluster with 2 head nodes and 1 worker node.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2dbd1-138">En primer lugar debe crear un grupo de recursos y la cuenta de almacenamiento, tal y como se explica más adelante.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-138">You first need to create a Resource Group and Storage Account, as explained below.</span></span> <span data-ttu-id="2dbd1-139">Si ya los ha creado, puede omitir estos pasos.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-139">If you have already created these, you can skip these steps.</span></span>
+> <span data-ttu-id="3c90a-140">En primer lugar debe crear un grupo de recursos y la cuenta de almacenamiento, tal y como se explica más adelante.</span><span class="sxs-lookup"><span data-stu-id="3c90a-140">You first need to create a Resource Group and Storage Account, as explained below.</span></span> <span data-ttu-id="3c90a-141">Si ya los ha creado, puede omitir estos pasos.</span><span class="sxs-lookup"><span data-stu-id="3c90a-141">If you have already created these, you can skip these steps.</span></span>
 
-##### <a name="creating-a-resource-group"></a><span data-ttu-id="2dbd1-140">Creación de un grupo de recursos</span><span class="sxs-lookup"><span data-stu-id="2dbd1-140">Creating a Resource Group</span></span>
+##### <a name="creating-a-resource-group"></a><span data-ttu-id="3c90a-142">Creación de un grupo de recursos</span><span class="sxs-lookup"><span data-stu-id="3c90a-142">Creating a Resource Group</span></span>
 
-<span data-ttu-id="2dbd1-141">Puede crear un grupo de recursos con [Azure Cloud Shell](https://shell.azure.com/bash), con el siguiente comando:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-141">You can create a resource group using the [Azure Cloud Shell](https://shell.azure.com/bash) by running</span></span>
+<span data-ttu-id="3c90a-143">Puede crear un grupo de recursos con [Azure Cloud Shell](https://shell.azure.com/bash), con el siguiente comando:</span><span class="sxs-lookup"><span data-stu-id="3c90a-143">You can create a resource group using the [Azure Cloud Shell](https://shell.azure.com/bash) by running</span></span>
 ```azurecli-interactive
 az group create -l <Region Name (i.e. eastus)> --n <Resource Group Name>
 ```
-##### <a name="creating-a-storage-account"></a><span data-ttu-id="2dbd1-142">Creación de una cuenta de almacenamiento</span><span class="sxs-lookup"><span data-stu-id="2dbd1-142">Creating a Storage Account</span></span>
+##### <a name="creating-a-storage-account"></a><span data-ttu-id="3c90a-144">Creación de una cuenta de almacenamiento</span><span class="sxs-lookup"><span data-stu-id="3c90a-144">Creating a Storage Account</span></span>
 
-<span data-ttu-id="2dbd1-143">Puede crear una cuenta de almacenamiento con [Azure Cloud Shell](https://shell.azure.com/bash), con el siguiente comando:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-143">You can create a storage account using the [Azure Cloud Shell](https://shell.azure.com/bash) by running:</span></span>
+<span data-ttu-id="3c90a-145">Puede crear una cuenta de almacenamiento con [Azure Cloud Shell](https://shell.azure.com/bash), con el siguiente comando:</span><span class="sxs-lookup"><span data-stu-id="3c90a-145">You can create a storage account using the [Azure Cloud Shell](https://shell.azure.com/bash) by running:</span></span>
 ```azurecli-interactive
 az storage account create -n <Storage Account Name> -g <Existing Resource Group Name> -l <Region Name (i.e. eastus)> --sku <SKU i.e. Standard_LRS>
 ```
-<span data-ttu-id="2dbd1-144">Ahora, ejecute el siguiente comando para obtener la clave de la cuenta de almacenamiento (que necesitará para crear un clúster):</span><span class="sxs-lookup"><span data-stu-id="2dbd1-144">Now run the following command to get the key for your storage account (you will need this to create a cluster):</span></span>
+<span data-ttu-id="3c90a-146">Ahora, ejecute el siguiente comando para obtener la clave de la cuenta de almacenamiento (que necesitará para crear un clúster):</span><span class="sxs-lookup"><span data-stu-id="3c90a-146">Now run the following command to get the key for your storage account (you will need this to create a cluster):</span></span>
 ```azurecli-interactive
 az storage account keys list -n <Storage Account Name>
 ```
 ---
-<span data-ttu-id="2dbd1-145">El siguiente fragmento de código de Python crea un clúster de Spark con dos nodos principales y un nodo de trabajo.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-145">The below Python snippet creates a Spark cluster with 2 head nodes and 1 worker node.</span></span> <span data-ttu-id="2dbd1-146">Rellene las variables en blanco tal y como se explica en los comentarios y no dude en cambiar otros parámetros para que se adapten a sus necesidades específicas.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-146">Fill in the blank variables as explained in the comments and feel free to change other parameters to suit your specific needs.</span></span>
+<span data-ttu-id="3c90a-147">El siguiente fragmento de código de Python crea un clúster de Spark con dos nodos principales y un nodo de trabajo.</span><span class="sxs-lookup"><span data-stu-id="3c90a-147">The below Python snippet creates a Spark cluster with 2 head nodes and 1 worker node.</span></span> <span data-ttu-id="3c90a-148">Rellene las variables en blanco tal y como se explica en los comentarios y no dude en cambiar otros parámetros para que se adapten a sus necesidades específicas.</span><span class="sxs-lookup"><span data-stu-id="3c90a-148">Fill in the blank variables as explained in the comments and feel free to change other parameters to suit your specific needs.</span></span>
 
 ```python
 # The name for the cluster you are creating
@@ -236,51 +240,47 @@ client.clusters.create(
     ))
 ```
 
-#### <a name="samples"></a><span data-ttu-id="2dbd1-147">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="2dbd1-147">Samples</span></span>
+### <a name="get-cluster-details"></a><span data-ttu-id="3c90a-149">Obtención de los detalles del clúster</span><span class="sxs-lookup"><span data-stu-id="3c90a-149">Get Cluster Details</span></span>
 
-<span data-ttu-id="2dbd1-148">También hay disponibles ejemplos de código para crear varios tipos comunes de clústeres de HDInsight: [Ejemplos de HDInsight para Python](https://github.com/Azure-Samples/hdinsight-python-sdk-samples)</span><span class="sxs-lookup"><span data-stu-id="2dbd1-148">Code samples for creating several common types of HDInsight clusters are also available: [HDInsight Python Samples](https://github.com/Azure-Samples/hdinsight-python-sdk-samples).</span></span>
-
-### <a name="get-cluster-details"></a><span data-ttu-id="2dbd1-149">Obtención de los detalles del clúster</span><span class="sxs-lookup"><span data-stu-id="2dbd1-149">Get Cluster Details</span></span>
-
-<span data-ttu-id="2dbd1-150">Para obtener las propiedades de un clúster determinado:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-150">To get properties for a given cluster:</span></span>
+<span data-ttu-id="3c90a-150">Para obtener las propiedades de un clúster determinado:</span><span class="sxs-lookup"><span data-stu-id="3c90a-150">To get properties for a given cluster:</span></span>
 
 ```python
 client.clusters.get("<Resource Group Name>", "<Cluster Name>")
 ```
 
-#### <a name="example"></a><span data-ttu-id="2dbd1-151">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="2dbd1-151">Example</span></span>
+#### <a name="example"></a><span data-ttu-id="3c90a-151">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="3c90a-151">Example</span></span>
 
-<span data-ttu-id="2dbd1-152">Puede usar `get` para confirmar que ha creado correctamente el clúster.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-152">You can use `get` to confirm that you have successfully created your cluster.</span></span>
+<span data-ttu-id="3c90a-152">Puede usar `get` para confirmar que ha creado correctamente el clúster.</span><span class="sxs-lookup"><span data-stu-id="3c90a-152">You can use `get` to confirm that you have successfully created your cluster.</span></span>
 
 ```python
 my_cluster = client.clusters.get("<Resource Group Name>", "<Cluster Name>")
 print(my_cluster)
 ```
 
-<span data-ttu-id="2dbd1-153">La salida debe ser similar a la siguiente:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-153">The output should look like:</span></span>
+<span data-ttu-id="3c90a-153">La salida debe ser similar a la siguiente:</span><span class="sxs-lookup"><span data-stu-id="3c90a-153">The output should look like:</span></span>
 
 ```
 {'additional_properties': {}, 'id': '/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/<Resource Group Name>/providers/Microsoft.HDInsight/clusters/<Cluster Name>', 'name': '<Cluster Name>', 'type': 'Microsoft.HDInsight/clusters', 'location': '<Location>', 'tags': {}, 'etag': 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX', 'properties': <azure.mgmt.hdinsight.models.cluster_get_properties_py3.ClusterGetProperties object at 0x0000013766D68048>}
 ```
 
-### <a name="list-clusters"></a><span data-ttu-id="2dbd1-154">Lista de clústeres</span><span class="sxs-lookup"><span data-stu-id="2dbd1-154">List Clusters</span></span>
+### <a name="list-clusters"></a><span data-ttu-id="3c90a-154">Lista de clústeres</span><span class="sxs-lookup"><span data-stu-id="3c90a-154">List Clusters</span></span>
 
-#### <a name="list-clusters-under-the-subscription"></a><span data-ttu-id="2dbd1-155">Lista de clústeres de la suscripción</span><span class="sxs-lookup"><span data-stu-id="2dbd1-155">List Clusters Under The Subscription</span></span>
+#### <a name="list-clusters-under-the-subscription"></a><span data-ttu-id="3c90a-155">Lista de clústeres de la suscripción</span><span class="sxs-lookup"><span data-stu-id="3c90a-155">List Clusters Under The Subscription</span></span>
 
 ```python
 client.clusters.list()
 ```
-#### <a name="list-clusters-by-resource-group"></a><span data-ttu-id="2dbd1-156">Lista de clústeres por grupo de recursos</span><span class="sxs-lookup"><span data-stu-id="2dbd1-156">List Clusters By Resource Group</span></span>
+#### <a name="list-clusters-by-resource-group"></a><span data-ttu-id="3c90a-156">Lista de clústeres por grupo de recursos</span><span class="sxs-lookup"><span data-stu-id="3c90a-156">List Clusters By Resource Group</span></span>
 
 ```python
 client.clusters.list_by_resource_group("<Resource Group Name>")
 ```
 > [!NOTE]
-> <span data-ttu-id="2dbd1-157">Tanto `list()` como `list_by_resource_group()` devuelven un objeto `ClusterPaged`.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-157">Both `list()` and `list_by_resource_group()` return a `ClusterPaged` object.</span></span> <span data-ttu-id="2dbd1-158">Una llamada a `advance_page()` devuelve una lista de clústeres en esa página y hace avanzar el objeto `ClusterPaged` a la página siguiente.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-158">Calling `advance_page()` returns a list of clusters on that page and advances the `ClusterPaged` object to the next page.</span></span> <span data-ttu-id="2dbd1-159">Esto se puede repetir hasta que se produzca una excepción `StopIteration`, que indica que no existen más páginas.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-159">This can be repeated until a `StopIteration` exception is raised, indicating that there are no more pages.</span></span>
+> <span data-ttu-id="3c90a-157">Tanto `list()` como `list_by_resource_group()` devuelven un objeto `ClusterPaged`.</span><span class="sxs-lookup"><span data-stu-id="3c90a-157">Both `list()` and `list_by_resource_group()` return a `ClusterPaged` object.</span></span> <span data-ttu-id="3c90a-158">Una llamada a `advance_page()` devuelve una lista de clústeres en esa página y hace avanzar el objeto `ClusterPaged` a la página siguiente.</span><span class="sxs-lookup"><span data-stu-id="3c90a-158">Calling `advance_page()` returns a list of clusters on that page and advances the `ClusterPaged` object to the next page.</span></span> <span data-ttu-id="3c90a-159">Esto se puede repetir hasta que se produzca una excepción `StopIteration`, que indica que no existen más páginas.</span><span class="sxs-lookup"><span data-stu-id="3c90a-159">This can be repeated until a `StopIteration` exception is raised, indicating that there are no more pages.</span></span>
 
-#### <a name="example"></a><span data-ttu-id="2dbd1-160">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="2dbd1-160">Example</span></span>
+#### <a name="example"></a><span data-ttu-id="3c90a-160">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="3c90a-160">Example</span></span>
 
-<span data-ttu-id="2dbd1-161">El ejemplo siguiente imprime las propiedades de todos los clústeres de la suscripción actual:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-161">The following example prints the properties of all clusters for the current subscription:</span></span>
+<span data-ttu-id="3c90a-161">El ejemplo siguiente imprime las propiedades de todos los clústeres de la suscripción actual:</span><span class="sxs-lookup"><span data-stu-id="3c90a-161">The following example prints the properties of all clusters for the current subscription:</span></span>
 
 ```python
 clusters_paged = client.clusters.list()
@@ -292,75 +292,75 @@ while True:
     break
 ```
 
-### <a name="delete-a-cluster"></a><span data-ttu-id="2dbd1-162">Eliminación de un clúster</span><span class="sxs-lookup"><span data-stu-id="2dbd1-162">Delete a Cluster</span></span>
+### <a name="delete-a-cluster"></a><span data-ttu-id="3c90a-162">Eliminación de un clúster</span><span class="sxs-lookup"><span data-stu-id="3c90a-162">Delete a Cluster</span></span>
 
-<span data-ttu-id="2dbd1-163">Para eliminar un clúster:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-163">To delete a cluster:</span></span>
+<span data-ttu-id="3c90a-163">Para eliminar un clúster:</span><span class="sxs-lookup"><span data-stu-id="3c90a-163">To delete a cluster:</span></span>
 
 ```python
 client.clusters.delete("<Resource Group Name>", "<Cluster Name>")
 ```
 
-### <a name="update-cluster-tags"></a><span data-ttu-id="2dbd1-164">Actualización de las etiquetas del clúster</span><span class="sxs-lookup"><span data-stu-id="2dbd1-164">Update Cluster Tags</span></span>
+### <a name="update-cluster-tags"></a><span data-ttu-id="3c90a-164">Actualización de las etiquetas del clúster</span><span class="sxs-lookup"><span data-stu-id="3c90a-164">Update Cluster Tags</span></span>
 
-<span data-ttu-id="2dbd1-165">Puede actualizar las etiquetas de un clúster determinado de este modo:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-165">You can update the tags of a given cluster like so:</span></span>
+<span data-ttu-id="3c90a-165">Puede actualizar las etiquetas de un clúster determinado de este modo:</span><span class="sxs-lookup"><span data-stu-id="3c90a-165">You can update the tags of a given cluster like so:</span></span>
 
 ```python
 client.clusters.update("<Resource Group Name>", "<Cluster Name>", tags={<Dictionary of Tags>})
 ```
 
-#### <a name="example"></a><span data-ttu-id="2dbd1-166">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="2dbd1-166">Example</span></span>
+#### <a name="example"></a><span data-ttu-id="3c90a-166">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="3c90a-166">Example</span></span>
 
 ```python
 client.clusters.update("<Resource Group Name>", "<Cluster Name>", tags={"tag1Name" : "tag1Value", "tag2Name" : "tag2Value"})
 ```
 
-### <a name="resize-cluster"></a><span data-ttu-id="2dbd1-167">Cambio del tamaño de clúster</span><span class="sxs-lookup"><span data-stu-id="2dbd1-167">Resize Cluster</span></span>
+### <a name="resize-cluster"></a><span data-ttu-id="3c90a-167">Cambio del tamaño de clúster</span><span class="sxs-lookup"><span data-stu-id="3c90a-167">Resize Cluster</span></span>
 
-<span data-ttu-id="2dbd1-168">Para cambiar el tamaño de un número de nodos de trabajo de un clúster determinado, puede especificar un nuevo tamaño como sigue:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-168">You can resize a given cluster's number of worker nodes by specifying a new size like so:</span></span>
+<span data-ttu-id="3c90a-168">Para cambiar el tamaño de un número de nodos de trabajo de un clúster determinado, puede especificar un nuevo tamaño como sigue:</span><span class="sxs-lookup"><span data-stu-id="3c90a-168">You can resize a given cluster's number of worker nodes by specifying a new size like so:</span></span>
 
 ```python
 client.clusters.resize("<Resource Group Name>", "<Cluster Name>", target_instance_count=<Num of Worker Nodes>)
 ```
 
-## <a name="cluster-monitoring"></a><span data-ttu-id="2dbd1-169">Supervisión de clústeres</span><span class="sxs-lookup"><span data-stu-id="2dbd1-169">Cluster Monitoring</span></span>
+## <a name="cluster-monitoring"></a><span data-ttu-id="3c90a-169">Supervisión de clústeres</span><span class="sxs-lookup"><span data-stu-id="3c90a-169">Cluster Monitoring</span></span>
 
-<span data-ttu-id="2dbd1-170">El SDK de administración de HDInsight también puede utilizarse para administrar la supervisión en los clústeres mediante Operations Management Suite (OMS).</span><span class="sxs-lookup"><span data-stu-id="2dbd1-170">The HDInsight Management SDK can also be used to manage monitoring on your clusters via the Operations Management Suite (OMS).</span></span>
+<span data-ttu-id="3c90a-170">El SDK de administración de HDInsight también puede utilizarse para administrar la supervisión en los clústeres mediante Operations Management Suite (OMS).</span><span class="sxs-lookup"><span data-stu-id="3c90a-170">The HDInsight Management SDK can also be used to manage monitoring on your clusters via the Operations Management Suite (OMS).</span></span>
 
-### <a name="enable-oms-monitoring"></a><span data-ttu-id="2dbd1-171">Habilitación de OMS Monitoring</span><span class="sxs-lookup"><span data-stu-id="2dbd1-171">Enable OMS Monitoring</span></span>
+### <a name="enable-oms-monitoring"></a><span data-ttu-id="3c90a-171">Habilitación de OMS Monitoring</span><span class="sxs-lookup"><span data-stu-id="3c90a-171">Enable OMS Monitoring</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2dbd1-172">Para habilitar OMS Monitoring, debe tener un área de trabajo de Log Analytics.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-172">To enable OMS Monitoring, you must have an existing Log Analytics workspace.</span></span> <span data-ttu-id="2dbd1-173">Si aún no ha creado una, puede aprender a hacerlo aquí: [Creación de un área de trabajo de Log Analytics en Azure Portal](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).</span><span class="sxs-lookup"><span data-stu-id="2dbd1-173">If you have not already created one, you can learn how to do that here: [Create a Log Analytics workspace in the Azure portal](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).</span></span>
+> <span data-ttu-id="3c90a-172">Para habilitar OMS Monitoring, debe tener un área de trabajo de Log Analytics.</span><span class="sxs-lookup"><span data-stu-id="3c90a-172">To enable OMS Monitoring, you must have an existing Log Analytics workspace.</span></span> <span data-ttu-id="3c90a-173">Si aún no ha creado una, puede aprender a hacerlo aquí: [Creación de un área de trabajo de Log Analytics en Azure Portal](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).</span><span class="sxs-lookup"><span data-stu-id="3c90a-173">If you have not already created one, you can learn how to do that here: [Create a Log Analytics workspace in the Azure portal](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).</span></span>
 
-<span data-ttu-id="2dbd1-174">Para habilitar OMS Monitoring en el clúster:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-174">To enable OMS Monitoring on your cluster:</span></span>
+<span data-ttu-id="3c90a-174">Para habilitar OMS Monitoring en el clúster:</span><span class="sxs-lookup"><span data-stu-id="3c90a-174">To enable OMS Monitoring on your cluster:</span></span>
 
 ```python
 client.extension.enable_monitoring("<Resource Group Name>", "<Cluster Name>", workspace_id="<Workspace Id>")
 ```
 
-### <a name="view-status-of-oms-monitoring"></a><span data-ttu-id="2dbd1-175">Ver el estado de OMS Monitoring</span><span class="sxs-lookup"><span data-stu-id="2dbd1-175">View Status Of OMS Monitoring</span></span>
+### <a name="view-status-of-oms-monitoring"></a><span data-ttu-id="3c90a-175">Ver el estado de OMS Monitoring</span><span class="sxs-lookup"><span data-stu-id="3c90a-175">View Status Of OMS Monitoring</span></span>
 
-<span data-ttu-id="2dbd1-176">Para obtener el estado de OMS en el clúster:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-176">To get the status of OMS on your cluster:</span></span>
+<span data-ttu-id="3c90a-176">Para obtener el estado de OMS en el clúster:</span><span class="sxs-lookup"><span data-stu-id="3c90a-176">To get the status of OMS on your cluster:</span></span>
 
 ```python
 client.extension.get_monitoring_status("<Resource Group Name", "Cluster Name")
 ```
 
-### <a name="disable-oms-monitoring"></a><span data-ttu-id="2dbd1-177">Deshabilitación de OMS Monitoring</span><span class="sxs-lookup"><span data-stu-id="2dbd1-177">Disable OMS Monitoring</span></span>
+### <a name="disable-oms-monitoring"></a><span data-ttu-id="3c90a-177">Deshabilitación de OMS Monitoring</span><span class="sxs-lookup"><span data-stu-id="3c90a-177">Disable OMS Monitoring</span></span>
 
-<span data-ttu-id="2dbd1-178">Para deshabilitar OMS en el clúster:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-178">To disable OMS on your cluster:</span></span>
+<span data-ttu-id="3c90a-178">Para deshabilitar OMS en el clúster:</span><span class="sxs-lookup"><span data-stu-id="3c90a-178">To disable OMS on your cluster:</span></span>
 
 ```python
 client.extension.disable_monitoring("<Resource Group Name>", "<Cluster Name>")
 ```
 
-## <a name="script-actions"></a><span data-ttu-id="2dbd1-179">Acciones de script</span><span class="sxs-lookup"><span data-stu-id="2dbd1-179">Script Actions</span></span>
+## <a name="script-actions"></a><span data-ttu-id="3c90a-179">Acciones de script</span><span class="sxs-lookup"><span data-stu-id="3c90a-179">Script Actions</span></span>
 
-<span data-ttu-id="2dbd1-180">HDInsight proporciona un método de configuración llamado acciones de script, que invoca scripts personalizados para personalizar el clúster.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-180">HDInsight provides a configuration method called script actions that invokes custom scripts to customize the cluster.</span></span>
+<span data-ttu-id="3c90a-180">HDInsight proporciona un método de configuración llamado acciones de script, que invoca scripts personalizados para personalizar el clúster.</span><span class="sxs-lookup"><span data-stu-id="3c90a-180">HDInsight provides a configuration method called script actions that invokes custom scripts to customize the cluster.</span></span>
 > [!NOTE]
-> <span data-ttu-id="2dbd1-181">Encontrará más información sobre cómo usar acciones de script aquí: [Personalización de clústeres de HDInsight basados en Linux mediante acciones de script](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux)</span><span class="sxs-lookup"><span data-stu-id="2dbd1-181">More information on how to use script actions can be found here: [Customize Linux-based HDInsight clusters using script actions](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux)</span></span>
+> <span data-ttu-id="3c90a-181">Encontrará más información sobre cómo usar acciones de script aquí: [Personalización de clústeres de HDInsight basados en Linux mediante acciones de script](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux)</span><span class="sxs-lookup"><span data-stu-id="3c90a-181">More information on how to use script actions can be found here: [Customize Linux-based HDInsight clusters using script actions](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux)</span></span>
 
-### <a name="execute-script-actions"></a><span data-ttu-id="2dbd1-182">Ejecución de acciones de script</span><span class="sxs-lookup"><span data-stu-id="2dbd1-182">Execute Script Actions</span></span>
-<span data-ttu-id="2dbd1-183">Para ejecutar acciones de script en un clúster determinado:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-183">To execute script actions on a given cluster:</span></span>
+### <a name="execute-script-actions"></a><span data-ttu-id="3c90a-182">Ejecución de acciones de script</span><span class="sxs-lookup"><span data-stu-id="3c90a-182">Execute Script Actions</span></span>
+<span data-ttu-id="3c90a-183">Para ejecutar acciones de script en un clúster determinado:</span><span class="sxs-lookup"><span data-stu-id="3c90a-183">To execute script actions on a given cluster:</span></span>
 
 ```python
 script_action1 = RuntimeScriptAction(name="<Script Name>", uri="<URL To Script>", roles=[<List of Roles>]) #valid roles are "headnode", "workernode", "zookeepernode", and "edgenode"
@@ -368,25 +368,25 @@ script_action1 = RuntimeScriptAction(name="<Script Name>", uri="<URL To Script>"
 client.clusters.execute_script_actions("<Resource Group Name>", "<Cluster Name>", <persist_on_success (bool)>, script_actions=[script_action1]) #add more RuntimeScriptActions to the list to execute multiple scripts
 ```
 
-### <a name="delete-script-action"></a><span data-ttu-id="2dbd1-184">Eliminación de una acción de script</span><span class="sxs-lookup"><span data-stu-id="2dbd1-184">Delete Script Action</span></span>
+### <a name="delete-script-action"></a><span data-ttu-id="3c90a-184">Eliminación de una acción de script</span><span class="sxs-lookup"><span data-stu-id="3c90a-184">Delete Script Action</span></span>
 
-<span data-ttu-id="2dbd1-185">Para eliminar una acción de script persistente específica en un clúster determinado:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-185">To delete a specified persisted script action on a given cluster:</span></span>
+<span data-ttu-id="3c90a-185">Para eliminar una acción de script persistente específica en un clúster determinado:</span><span class="sxs-lookup"><span data-stu-id="3c90a-185">To delete a specified persisted script action on a given cluster:</span></span>
 
 ```python
 client.script_actions.delete("<Resource Group Name>", "<Cluster Name", "<Script Name>")
 ```
 
-### <a name="list-persisted-script-actions"></a><span data-ttu-id="2dbd1-186">Lista de acciones de script persistentes</span><span class="sxs-lookup"><span data-stu-id="2dbd1-186">List Persisted Script Actions</span></span>
+### <a name="list-persisted-script-actions"></a><span data-ttu-id="3c90a-186">Lista de acciones de script persistentes</span><span class="sxs-lookup"><span data-stu-id="3c90a-186">List Persisted Script Actions</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2dbd1-187">`list()` y `list_persisted_scripts()` devuelven un objeto `RuntimeScriptActionDetailPaged`.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-187">`list()` and `list_persisted_scripts()` return a `RuntimeScriptActionDetailPaged` object.</span></span> <span data-ttu-id="2dbd1-188">Una llamada a `advance_page()` devuelve la lista de `RuntimeScriptActionDetail` de esa página y hace avanzar el objeto `RuntimeScriptActionDetailPaged` a la página siguiente.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-188">Calling `advance_page()` returns a list of `RuntimeScriptActionDetail` on that page and advances the `RuntimeScriptActionDetailPaged` object to the next page.</span></span> <span data-ttu-id="2dbd1-189">Esto se puede repetir hasta que se produzca una excepción `StopIteration`, que indica que no existen más páginas.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-189">This can be repeated until a `StopIteration` exception is raised, indicating that there are no more pages.</span></span> <span data-ttu-id="2dbd1-190">Observe el ejemplo siguiente.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-190">See the example below.</span></span>
+> <span data-ttu-id="3c90a-187">`list()` y `list_persisted_scripts()` devuelven un objeto `RuntimeScriptActionDetailPaged`.</span><span class="sxs-lookup"><span data-stu-id="3c90a-187">`list()` and `list_persisted_scripts()` return a `RuntimeScriptActionDetailPaged` object.</span></span> <span data-ttu-id="3c90a-188">Una llamada a `advance_page()` devuelve la lista de `RuntimeScriptActionDetail` de esa página y hace avanzar el objeto `RuntimeScriptActionDetailPaged` a la página siguiente.</span><span class="sxs-lookup"><span data-stu-id="3c90a-188">Calling `advance_page()` returns a list of `RuntimeScriptActionDetail` on that page and advances the `RuntimeScriptActionDetailPaged` object to the next page.</span></span> <span data-ttu-id="3c90a-189">Esto se puede repetir hasta que se produzca una excepción `StopIteration`, que indica que no existen más páginas.</span><span class="sxs-lookup"><span data-stu-id="3c90a-189">This can be repeated until a `StopIteration` exception is raised, indicating that there are no more pages.</span></span> <span data-ttu-id="3c90a-190">Observe el ejemplo siguiente.</span><span class="sxs-lookup"><span data-stu-id="3c90a-190">See the example below.</span></span>
 
-<span data-ttu-id="2dbd1-191">Para mostrar una lista de todas las acciones de script persistentes para el clúster especificado:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-191">To list all persisted script actions for the specified cluster:</span></span>
+<span data-ttu-id="3c90a-191">Para mostrar una lista de todas las acciones de script persistentes para el clúster especificado:</span><span class="sxs-lookup"><span data-stu-id="3c90a-191">To list all persisted script actions for the specified cluster:</span></span>
 ```python
 client.script_actions.list_persisted_scripts("<Resource Group Name>", "<Cluster Name>")
 ```
 
-#### <a name="example"></a><span data-ttu-id="2dbd1-192">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="2dbd1-192">Example</span></span>
+#### <a name="example"></a><span data-ttu-id="3c90a-192">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="3c90a-192">Example</span></span>
 
 ```python
 scripts_paged = client.script_actions.list_persisted_scripts(resource_group_name, cluster_name)
@@ -398,17 +398,17 @@ while True:
     break
 ```
 
-### <a name="list-all-scripts-execution-history"></a><span data-ttu-id="2dbd1-193">Lista del historial de ejecución de todos los scripts</span><span class="sxs-lookup"><span data-stu-id="2dbd1-193">List All Scripts' Execution History</span></span>
+### <a name="list-all-scripts-execution-history"></a><span data-ttu-id="3c90a-193">Lista del historial de ejecución de todos los scripts</span><span class="sxs-lookup"><span data-stu-id="3c90a-193">List All Scripts' Execution History</span></span>
 
-<span data-ttu-id="2dbd1-194">Para mostrar una lista del historial de ejecución de todos los scripts para el clúster especificado:</span><span class="sxs-lookup"><span data-stu-id="2dbd1-194">To list all scripts' execution history for the specified cluster:</span></span>
+<span data-ttu-id="3c90a-194">Para mostrar una lista del historial de ejecución de todos los scripts para el clúster especificado:</span><span class="sxs-lookup"><span data-stu-id="3c90a-194">To list all scripts' execution history for the specified cluster:</span></span>
 
 ```python
 client.script_execution_history.list("<Resource Group Name>", "<Cluster Name>")
 ```
 
-#### <a name="example"></a><span data-ttu-id="2dbd1-195">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="2dbd1-195">Example</span></span>
+#### <a name="example"></a><span data-ttu-id="3c90a-195">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="3c90a-195">Example</span></span>
 
-<span data-ttu-id="2dbd1-196">Este ejemplo imprime todos los detalles de todas las ejecuciones de script pasadas.</span><span class="sxs-lookup"><span data-stu-id="2dbd1-196">This example prints all the details for all past script executions.</span></span>
+<span data-ttu-id="3c90a-196">Este ejemplo imprime todos los detalles de todas las ejecuciones de script pasadas.</span><span class="sxs-lookup"><span data-stu-id="3c90a-196">This example prints all the details for all past script executions.</span></span>
 
 ```python
 script_executions_paged = client.script_execution_history.list("<Resource Group Name>", "<Cluster Name>")
