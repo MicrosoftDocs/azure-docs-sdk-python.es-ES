@@ -19,7 +19,7 @@ ms.locfileid: "33901358"
 
 ## <a name="overview"></a>Información general
 
-Trabaje con datos almacenados en [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) desde Python con el [controlador de base de datos de ODBC](https://github.com/mkleehammer/pyodbc/wiki/Drivers-and-Driver-Managers) de pyodbc. Consulte nuestra [guía de inicio rápido](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python) sobre la conexión a una base de datos SQL de Azure y el uso de instrucciones Transact-SQL para consultar los datos y comenzar el [ejemplo](https://github.com/mkleehammer/pyodbc/wiki/Getting-started) con pyodbc.
+Trabaje con datos almacenados en [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) desde Python con el [controlador de base de datos de ODBC](https://github.com/mkleehammer/pyodbc/wiki/Drivers-and-Driver-Managers) de pyodbc. Consulte nuestra [guía de inicio rápido](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python) sobre la conexión a una base de datos de Azure SQL y el uso de instrucciones Transact-SQL para consultar los datos y comenzar el [ejemplo](https://github.com/mkleehammer/pyodbc/wiki/Getting-started) con pyodbc.
 
 ## <a name="install-odbc-driver-and-pyodbc"></a>Instalación del controlador ODBC y pyodbc
 
