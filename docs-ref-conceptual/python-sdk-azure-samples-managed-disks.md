@@ -10,27 +10,25 @@ ms.service: Azure
 ms.technology: Azure
 ms.date: 6/15/2017
 ms.author: liwong
-ms.openlocfilehash: 733bd0ffce6ddb10219dae40bad6ea54e1efcd70
-ms.sourcegitcommit: 560362db0f65307c8b02b7b7ad8642b5c4aa6294
+ms.openlocfilehash: bee17efdb90d6365acb2adbf9c01d1f7e843da42
+ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33839410"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66376857"
 ---
 # <a name="managed-disks"></a>Managed Disks
 
-Ya están disponibles Azure Managed Disks y un conjunto de escalado de 1000 máquinas virtuales [de forma general](https://azure.microsoft.com/en-us/blog/announcing-general-availability-of-managed-disks-and-larger-scale-sets/). Azure Managed Disks proporcionan una administración de discos simplificada, mayor escalabilidad, mejor seguridad y escalado. Elimina la noción de cuenta de almacenamiento para los discos, lo que permite a los clientes escalar sin tener que preocuparse por las limitaciones asociadas con las cuentas de almacenamiento. Esta publicación proporciona una introducción rápida y referencia para utilizar el servicio desde Python.
-
-
+Azure Managed Disks proporciona una administración de discos simplificada, escalabilidad mejorada y mejor seguridad y escala. Elimina la noción de cuenta de almacenamiento para los discos, lo que permite a los clientes escalar sin tener que preocuparse por las limitaciones asociadas con las cuentas de almacenamiento. Esta publicación proporciona una introducción rápida y referencia para utilizar el servicio desde Python.
 
 Desde la perspectiva del desarrollador, la experiencia con los discos administrados en la CLI de Azure es específica del idioma de la experiencia de la CLI en otras herramientas multiplataforma. Puede usar [Azure SDK para Python](https://azure.microsoft.com/develop/python/) y el [paquete azure-mgmt-compute 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) para administrar discos administrados. Puede crear un cliente de proceso mediante este [tutorial](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python).
-
 
 ## <a name="standalone-managed-disks"></a>Discos administrados independientes
 
 Hay varias formas de crear discos administrados independientes fácilmente.
 
-### <a name="create-an-empty-managed-disk"></a>Crear un disco administrado vacío.
+### <a name="create-an-empty-managed-disk"></a>Crear un disco administrado vacío
+
 ```python
 from azure.mgmt.compute.models import DiskCreateOption
 
@@ -48,7 +46,8 @@ async_creation = compute_client.disks.create_or_update(
 disk_resource = async_creation.result()
 ```
 
-### <a name="create-a-managed-disk-from-blob-storage"></a>Crear un disco administrado a partir de Blob Storage.
+### <a name="create-a-managed-disk-from-blob-storage"></a>Crear un disco administrado a partir de Blob Storage
+
 ```python
 from azure.mgmt.compute.models import DiskCreateOption
 
@@ -66,7 +65,8 @@ async_creation = compute_client.disks.create_or_update(
 disk_resource = async_creation.result()
 ```
 
-### <a name="create-a-managed-disk-from-your-own-image"></a>Crear un disco administrado a partir de su propia imagen.
+### <a name="create-a-managed-disk-from-your-own-image"></a>Crear un disco administrado a partir de una imagen de su propiedad
+
 ```python
 from azure.mgmt.compute.models import DiskCreateOption
 
@@ -102,10 +102,12 @@ storage_profile = azure.mgmt.compute.models.StorageProfile(
         version='latest'
     )
 )
-``` 
+```
+
 Este parámetro ``storage_profile`` ahora es válido. Para obtener un ejemplo completo sobre cómo crear una máquina virtual en Python (incluida la red, etc.), consulte el [tutorial completo sobre máquinas virtuales en Python](https://github.com/Azure-Samples/virtual-machines-python-manage).
 
 Puede asociar fácilmente un disco administrado aprovisionado anteriormente.
+
 ```python
 vm = compute.virtual_machines.get(
     'my_resource_group',
@@ -196,11 +198,11 @@ result_create = compute_client.virtual_machine_scale_sets.create_or_update(
     vmss_parameters,
 )
 vmss_result = result_create.result()
-``` 
+```
 
 ## <a name="other-operations-with-managed-disks"></a>Otras operaciones con discos administrados
 
-### <a name="resizing-a-managed-disk"></a>Cambie el tamaño de un disco administrado.
+### <a name="resizing-a-managed-disk"></a>Cambio del tamaño de un disco administrado
 
 ```python
 managed_disk = compute_client.disks.get('my_resource_group', 'myDisk')
@@ -213,7 +215,8 @@ async_update = self.compute_client.disks.create_or_update(
 async_update.wait()
 ```
 
-### <a name="update-the-storage-account-type-of-the-managed-disks"></a>Actualice del tipo de cuenta de almacenamiento de los discos administrados.
+### <a name="update-the-storage-account-type-of-the-managed-disks"></a>Actualización del tipo de cuenta de almacenamiento de los discos administrados
+
 ```python
 from azure.mgmt.compute.models import StorageAccountTypes
 
@@ -227,7 +230,8 @@ async_update = self.compute_client.disks.create_or_update(
 async_update.wait()
 ```
 
-### <a name="create-an-image-from-blob-storage"></a>Cree una imagen a partir de Blob Storage.
+### <a name="create-an-image-from-nlob-storage"></a>Creación de una imagen a partir de Blob Storage
+
 ```python
 async_create_image = compute_client.images.create_or_update(
     'my_resource_group',
@@ -247,7 +251,8 @@ async_create_image = compute_client.images.create_or_update(
 image = async_create_image.result()
 ```
 
-### <a name="create-a-snapshot-of-a-managed-disk-that-is-currently-attached-to-a-virtual-machine"></a>Cree una instantánea de un disco administrado que esté asociado a una máquina virtual.
+### <a name="create-a-snapshot-of-a-managed-disk-that-is-currently-attached-to-a-virtual-machine"></a>Creación de una instantánea de un disco administrado que esté asociado actualmente a una máquina virtual
+
 ```python
 managed_disk = compute_client.disks.get('my_resource_group', 'myDisk')
 async_snapshot_creation = self.compute_client.snapshots.create_or_update(
