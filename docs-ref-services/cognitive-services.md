@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 736b2dd747842caa50418afc8219dafae655db39
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: 5890c2091f8456dd9b8bcb68f8a34eed3cae6e04
+ms.sourcegitcommit: d7ad0e8b4ba4add5e6f63e6b9eac54ecccdc7090
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52277462"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67148172"
 ---
 # <a name="azure-cognitive-services-modules-for-python"></a>Módulos de Azure Cognitive Services para Python
 
@@ -49,7 +49,7 @@ Moderación de texto, vídeo e imágenes asistida por máquina, mejorada con her
 Obtenga el módulo de Python con [pip](https://pip.pypa.io/en/stable/quickstart/):
 
 ```
-pip install azure-cognitiveservices-vision-computervision
+pip install azure-cognitiveservices-vision-contentmoderator
 ```
 
 [Obtenga más información](/azure/cognitive-services/content-moderator/overview) acerca del servicio Content Moderator.
