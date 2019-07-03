@@ -3,18 +3,18 @@ title: Bibliotecas de Azure Event Grid para Python
 description: ''
 keywords: Azure, Python, SDK, API, Event Grid
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: routlaw
 ms.date: 08/21/2017
 ms.topic: article
 ms.devlang: python
 ms.service: event-grid
-ms.openlocfilehash: bfaa1908295eb77531e399f1337acdeee512005f
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: e5df1078116f13f959923eac3e0c7b5789545278
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52276839"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534297"
 ---
 # <a name="event-grid-libraries-for-python"></a>Bibliotecas de Event Grid para Python
 
@@ -88,7 +88,7 @@ pip install azure-mgmt-eventgrid
 ### <a name="example"></a>Ejemplo
 
 A continuación se crea un tema personalizado y se suscribe un punto de conexión al tema. El código, a continuación, envía un evento al tema a través de HTTPS.
-RequestBin es una herramienta de código abierto de terceros que le permite crear un punto de conexión y ver las solicitudes que se envían a él. Vaya a [RequestBin](https://requestb.in/) y haga clic en **Create a RequestBin** (Crear RequestBin). Copie la dirección URL de la ubicación, la necesitará para suscribirse al tema.
+RequestBin es una herramienta de código abierto de terceros que le permite crear un punto de conexión y ver las solicitudes que se envían a él. Vaya a [RequestBin](https://requestbin.com) y haga clic en **Create a RequestBin** (Crear RequestBin). Copie la dirección URL de la ubicación, la necesitará para suscribirse al tema.
 
 ```python
 from azure.mgmt.resource import ResourceManagementClient

@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 5890c2091f8456dd9b8bcb68f8a34eed3cae6e04
-ms.sourcegitcommit: d7ad0e8b4ba4add5e6f63e6b9eac54ecccdc7090
+ms.openlocfilehash: 5a23a52414e70facd6feae3af3956a5131f6b5c4
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67148172"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534340"
 ---
 # <a name="azure-cognitive-services-modules-for-python"></a>Módulos de Azure Cognitive Services para Python
 
@@ -36,7 +36,7 @@ Devuelve información sobre el contenido visual encontrado en una imagen:
 
 Obtenga el módulo de Python con [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-vision-computervision
 ```
 
@@ -48,7 +48,7 @@ Moderación de texto, vídeo e imágenes asistida por máquina, mejorada con her
 
 Obtenga el módulo de Python con [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-vision-contentmoderator
 ```
 
@@ -60,7 +60,7 @@ Cargue imágenes para entrenar y personalizar un modelo de visión de equipo par
 
 Obtenga el módulo de Python con [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-vision-customvision
 ```
 
@@ -74,7 +74,7 @@ Detecte, identifique, analice, organice y etiquete las caras en las fotos.
 
 Obtenga el módulo de Python con [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install cognitive-face
 ```
 
@@ -90,7 +90,7 @@ Recupere documentos web indexados por Bing Web Search API y limite los resultado
 
 Obtenga el módulo de Python con [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-search-websearch
 ```
 
@@ -104,7 +104,7 @@ Busque imágenes y obtenga vistas en miniatura, direcciones URL completas de im�
 
 Obtenga el módulo de Python con [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-search-imagesearch
 ```
 
@@ -119,7 +119,7 @@ Busque la entidad más pertinente (lugar, persona o cosa) para un término de b�
 
 Obtenga el módulo de Python con [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-search-entitysearch
 ```
 
@@ -131,7 +131,7 @@ Cree una búsqueda web personalizada que cumpla los requisitos específicos de s
 
 Obtenga el módulo de Python con [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-search-customsearch
 ```
 
@@ -145,7 +145,7 @@ Busque vídeos en Internet y obtenga resultados con metadatos del creador, codif
 
 Obtenga el módulo de Python con [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-search-videosearch
 ```
 
@@ -160,11 +160,11 @@ Busque en Internet artículos de noticias y trabaje con los metadatos del artíc
 
 Obtenga el módulo de Python con [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-search-newssearch
 ```
 
-[Obtenga más información](/azure/cognitive-services/bing-news-search/search-the-web) acerca del servicio Bing News Search y empiece a trabajar con la [guía de inicio rápido de News Search API para Python](//azure/cognitive-services/bing-news-search/python).
+[Obtenga más información](/azure/cognitive-services/bing-news-search/search-the-web) acerca del servicio Bing News Search y empiece a trabajar con la [guía de inicio rápido de News Search API para Python](/azure/cognitive-services/bing-news-search/python).
 
 
 ## <a name="language-modules"></a>Modelo de lenguaje
@@ -181,7 +181,7 @@ Text Analytics API es un servicio en la nube que realiza el procesamiento del le
 
 Obtenga el módulo de Python con [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-language-textanalytics
 ```
 
@@ -196,7 +196,7 @@ Compruebe la gramática y la ortografía en contexto con Bing Spell Check API.
 
 Obtenga el módulo de Python con [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-language-spellcheck
 ```
 

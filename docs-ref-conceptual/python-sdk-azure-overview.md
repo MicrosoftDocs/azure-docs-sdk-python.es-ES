@@ -3,7 +3,7 @@ title: Bibliotecas de Azure para Python
 description: Introducción a la administración de Azure y las bibliotecas de servicios para Python
 keywords: Azure, Python, SDK, API
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 06/01/2017
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology: azure
 ms.devlang: python
 ms.service: multiple
 ms.assetid: ''
-ms.openlocfilehash: 2b3e6d31edd7b946664853b3478e22205ab8c92e
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: bb17295de2f0272f0525fda5edab87e840764478
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478808"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534467"
 ---
 # <a name="azure-libraries-for-python"></a>Bibliotecas de Azure para Python
 
@@ -75,7 +75,7 @@ print(blob_service.make_blob_url('mycontainername', 'myblobname'))
 
 ## <a name="sample-code-and-reference"></a>Código de ejemplo y referencia
 Los ejemplos siguientes incluyen las tareas comunes de automatización con las bibliotecas de administración de Azure para Python, y tienen código listo para usar en sus propias aplicaciones:
-- [Virtual Machines](python-sdk-azure-virtual-machine-samples.md)
+- [Máquinas virtuales](python-sdk-azure-virtual-machine-samples.md)
 - [Aplicaciones web](python-sdk-azure-web-apps-samples.md)
 - [SQL Database](python-sdk-azure-sql-database-samples.md)
 
@@ -83,4 +83,4 @@ Hay disponible una [referencia](/python/api/overview/azure) para todos los paque
 
 ## <a name="get-help-and-give-feedback"></a>Obtención de ayuda y ofrecimiento de comentarios
 
-Envíe preguntas a la Comunidad sobre [Stack Overflow](http://stackoverflow.com/questions/tagged/azure-sdk-python) y abra problemas en el SDK sobre el [GitHub del proyecto](https://github.com/Azure/azure-sdk-for-python).
+Envíe preguntas a la Comunidad sobre [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-sdk-python) y abra problemas en el SDK sobre el [GitHub del proyecto](https://github.com/Azure/azure-sdk-for-python).
