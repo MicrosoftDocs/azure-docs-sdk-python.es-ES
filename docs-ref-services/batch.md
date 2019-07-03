@@ -3,7 +3,7 @@ title: Bibliotecas de Azure Batch para Python
 description: Documentación de referencia de las bibliotecas de Batch para Python
 keywords: Azure, Python, SDK, API, Batch, proceso, programación, ejecución larga
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 07/31/2017
 ms.topic: article
@@ -11,32 +11,32 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: batch
-ms.openlocfilehash: fb9528c449d197440590bfc3b1991065cfe13357
-ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
+ms.openlocfilehash: bbc691a8db6597c77575900b4e2a06f34ebb179c
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66376836"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534355"
 ---
-# <a name="azure-batch-libraries-for-python"></a><span data-ttu-id="8964a-104">Bibliotecas de Azure Batch para Python</span><span class="sxs-lookup"><span data-stu-id="8964a-104">Azure Batch libraries for python</span></span>
+# <a name="azure-batch-libraries-for-python"></a><span data-ttu-id="f1c1c-104">Bibliotecas de Azure Batch para Python</span><span class="sxs-lookup"><span data-stu-id="f1c1c-104">Azure Batch libraries for python</span></span>
 
-## <a name="overview"></a><span data-ttu-id="8964a-105">Información general</span><span class="sxs-lookup"><span data-stu-id="8964a-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="f1c1c-105">Información general</span><span class="sxs-lookup"><span data-stu-id="f1c1c-105">Overview</span></span>
 
-<span data-ttu-id="8964a-106">[Azure Batch](/azure/batch/batch-technical-overview) permite ejecutar aplicaciones en paralelo a gran escala y de informática de alto rendimiento de manera eficaz en la nube.</span><span class="sxs-lookup"><span data-stu-id="8964a-106">Run large-scale parallel and high-performance computing applications efficiently in the cloud with [Azure Batch](/azure/batch/batch-technical-overview).</span></span>
+<span data-ttu-id="f1c1c-106">[Azure Batch](/azure/batch/batch-technical-overview) permite ejecutar aplicaciones en paralelo a gran escala y de informática de alto rendimiento de manera eficaz en la nube.</span><span class="sxs-lookup"><span data-stu-id="f1c1c-106">Run large-scale parallel and high-performance computing applications efficiently in the cloud with [Azure Batch](/azure/batch/batch-technical-overview).</span></span>
 
-<span data-ttu-id="8964a-107">Para empezar a trabajar con Azure Batch, consulte [Creación de una cuenta de Batch con Azure Portal](/azure/batch/batch-account-create-portal).</span><span class="sxs-lookup"><span data-stu-id="8964a-107">To get started with Azure Batch, see [Create a Batch account with the Azure portal](/azure/batch/batch-account-create-portal).</span></span>
+<span data-ttu-id="f1c1c-107">Para empezar a trabajar con Azure Batch, consulte [Creación de una cuenta de Batch con Azure Portal](/azure/batch/batch-account-create-portal).</span><span class="sxs-lookup"><span data-stu-id="f1c1c-107">To get started with Azure Batch, see [Create a Batch account with the Azure portal](/azure/batch/batch-account-create-portal).</span></span>
 
-## <a name="install-the-libraries"></a><span data-ttu-id="8964a-108">Instalación de las bibliotecas</span><span class="sxs-lookup"><span data-stu-id="8964a-108">Install the libraries</span></span>
+## <a name="install-the-libraries"></a><span data-ttu-id="f1c1c-108">Instalación de las bibliotecas</span><span class="sxs-lookup"><span data-stu-id="f1c1c-108">Install the libraries</span></span>
 
-## <a name="client-library"></a><span data-ttu-id="8964a-109">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="8964a-109">Client library</span></span>
-<span data-ttu-id="8964a-110">Las bibliotecas de cliente de Azure Batch le permiten configurar nodos de cálculo y grupos, definir tareas y configurarlos para ejecutar trabajos y configurar un administrador de trabajos para controlar y supervisar la ejecución de trabajos.</span><span class="sxs-lookup"><span data-stu-id="8964a-110">The Azure Batch client libraries let you configure compute nodes and pools, define tasks and configure them to run in jobs, and set up a job manager to control and monitor job execution.</span></span> <span data-ttu-id="8964a-111">[Obtenga más información](/azure/batch/batch-api-basics) sobre el uso de estos objetos para ejecutar soluciones de proceso en paralelo a gran escala.</span><span class="sxs-lookup"><span data-stu-id="8964a-111">[Learn more](/azure/batch/batch-api-basics) about using these objects to run large-scale parallel compute solutions.</span></span>
+## <a name="client-library"></a><span data-ttu-id="f1c1c-109">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="f1c1c-109">Client library</span></span>
+<span data-ttu-id="f1c1c-110">Las bibliotecas de cliente de Azure Batch le permiten configurar nodos de cálculo y grupos, definir tareas y configurarlos para ejecutar trabajos y configurar un administrador de trabajos para controlar y supervisar la ejecución de trabajos.</span><span class="sxs-lookup"><span data-stu-id="f1c1c-110">The Azure Batch client libraries let you configure compute nodes and pools, define tasks and configure them to run in jobs, and set up a job manager to control and monitor job execution.</span></span> <span data-ttu-id="f1c1c-111">[Obtenga más información](/azure/batch/batch-api-basics) sobre el uso de estos objetos para ejecutar soluciones de proceso en paralelo a gran escala.</span><span class="sxs-lookup"><span data-stu-id="f1c1c-111">[Learn more](/azure/batch/batch-api-basics) about using these objects to run large-scale parallel compute solutions.</span></span>
 
 ```bash
 pip install azure-batch
 ```
-### <a name="example"></a><span data-ttu-id="8964a-112">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="8964a-112">Example</span></span>
+### <a name="example"></a><span data-ttu-id="f1c1c-112">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="f1c1c-112">Example</span></span>
 
-<span data-ttu-id="8964a-113">Configure un grupo de nodos de proceso de Linux en una cuenta de Batch:</span><span class="sxs-lookup"><span data-stu-id="8964a-113">Set up a pool of Linux compute nodes in a batch account:</span></span>
+<span data-ttu-id="f1c1c-113">Configure un grupo de nodos de proceso de Linux en una cuenta de Batch:</span><span class="sxs-lookup"><span data-stu-id="f1c1c-113">Set up a pool of Linux compute nodes in a batch account:</span></span>
 
 ```python
 # create the batch client for an account using its URI and keys
@@ -58,17 +58,17 @@ new_pool.virtual_machine_configuration = vmc
 client.pool.add(new_pool)
 ```
 
-## <a name="management-api"></a><span data-ttu-id="8964a-114">API de administración</span><span class="sxs-lookup"><span data-stu-id="8964a-114">Management API</span></span>
-<span data-ttu-id="8964a-115">Use las bibliotecas de administración de Azure Batch para crear y eliminar cuentas de Batch, leer y volver a generar las claves de cuenta de Batch y administrar la cuenta de almacenamiento de Batch.</span><span class="sxs-lookup"><span data-stu-id="8964a-115">Use the Azure Batch management libraries to create and delete batch accounts, read and regenerate batch account keys, and manage batch account storage.</span></span>
+## <a name="management-api"></a><span data-ttu-id="f1c1c-114">API de administración</span><span class="sxs-lookup"><span data-stu-id="f1c1c-114">Management API</span></span>
+<span data-ttu-id="f1c1c-115">Use las bibliotecas de administración de Azure Batch para crear y eliminar cuentas de Batch, leer y volver a generar las claves de cuenta de Batch y administrar la cuenta de almacenamiento de Batch.</span><span class="sxs-lookup"><span data-stu-id="f1c1c-115">Use the Azure Batch management libraries to create and delete batch accounts, read and regenerate batch account keys, and manage batch account storage.</span></span>
 
 ```bash
 pip install azure-mgmt-batch
 ```
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="8964a-116">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="8964a-116">Explore the Client APIs</span></span>](/python/api/overview/azure/batch/client)
+> [<span data-ttu-id="f1c1c-116">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="f1c1c-116">Explore the Client APIs</span></span>](/python/api/overview/azure/batch/client)
 
-### <a name="example"></a><span data-ttu-id="8964a-117">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="8964a-117">Example</span></span>
-<span data-ttu-id="8964a-118">Cree una cuenta de Azure Batch y configure una nueva aplicación y una cuenta de Azure Storage para ella.</span><span class="sxs-lookup"><span data-stu-id="8964a-118">Create an Azure Batch account and configure a new application and Azure storage account for it.</span></span>
+### <a name="example"></a><span data-ttu-id="f1c1c-117">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="f1c1c-117">Example</span></span>
+<span data-ttu-id="f1c1c-118">Cree una cuenta de Azure Batch y configure una nueva aplicación y una cuenta de Azure Storage para ella.</span><span class="sxs-lookup"><span data-stu-id="f1c1c-118">Create an Azure Batch account and configure a new application and Azure storage account for it.</span></span>
 
 ```python
 from azure.mgmt.batch import BatchManagementClient
@@ -106,4 +106,4 @@ creating.wait()
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="8964a-119">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="8964a-119">Explore the Management APIs</span></span>](/python/api/overview/azure/batch/management)
+> [<span data-ttu-id="f1c1c-119">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="f1c1c-119">Explore the Management APIs</span></span>](/python/api/overview/azure/batch/management)

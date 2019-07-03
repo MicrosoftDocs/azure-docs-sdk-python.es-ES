@@ -3,7 +3,7 @@ title: Bibliotecas de Azure Monitor para Python
 description: Referencia de las bibliotecas de Azure Monitor para Python
 keywords: Azure, python, SDK, API, Monitor
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 07/19/2017
 ms.topic: article
@@ -11,31 +11,31 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 36746da246db2467b336a2eb14bfe2f6300b6ea4
-ms.sourcegitcommit: 993aacad1d19d87533023f154c015d840723d716
+ms.openlocfilehash: 6408854e48378c27da56185899db5e1cc7f939e5
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57528063"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534258"
 ---
-# <a name="azure-monitoring-libraries-for-python"></a><span data-ttu-id="5e34b-104">Bibliotecas de Azure Monitor para Python</span><span class="sxs-lookup"><span data-stu-id="5e34b-104">Azure Monitoring libraries for python</span></span>
+# <a name="azure-monitoring-libraries-for-python"></a><span data-ttu-id="61aba-104">Bibliotecas de Azure Monitor para Python</span><span class="sxs-lookup"><span data-stu-id="61aba-104">Azure Monitoring libraries for python</span></span>
 
-## <a name="overview"></a><span data-ttu-id="5e34b-105">Información general</span><span class="sxs-lookup"><span data-stu-id="5e34b-105">Overview</span></span> 
-<span data-ttu-id="5e34b-106">La supervisión proporciona datos para garantizar que la aplicación permanece en funcionamiento en un estado correcto.</span><span class="sxs-lookup"><span data-stu-id="5e34b-106">Monitoring provides data to ensure that your application stays up and running in a healthy state.</span></span> <span data-ttu-id="5e34b-107">También ayuda a evitar posibles problemas o a solucionar los existentes.</span><span class="sxs-lookup"><span data-stu-id="5e34b-107">It also helps you to stave off potential problems or troubleshoot past ones.</span></span> <span data-ttu-id="5e34b-108">Además, puede usar datos de supervisión para obtener un conocimiento más profundo sobre su aplicación.</span><span class="sxs-lookup"><span data-stu-id="5e34b-108">In addition, you can use monitoring data to gain deep insights about your application.</span></span> <span data-ttu-id="5e34b-109">Este conocimiento puede ayudarle a mejorar el rendimiento o mantenimiento de la aplicación, o a automatizar acciones que de lo contrario requerirían intervención manual.</span><span class="sxs-lookup"><span data-stu-id="5e34b-109">That knowledge can help you to improve application performance or maintainability, or automate actions that would otherwise require manual intervention.</span></span>
+## <a name="overview"></a><span data-ttu-id="61aba-105">Información general</span><span class="sxs-lookup"><span data-stu-id="61aba-105">Overview</span></span> 
+<span data-ttu-id="61aba-106">La supervisión proporciona datos para garantizar que la aplicación permanece en funcionamiento en un estado correcto.</span><span class="sxs-lookup"><span data-stu-id="61aba-106">Monitoring provides data to ensure that your application stays up and running in a healthy state.</span></span> <span data-ttu-id="61aba-107">También ayuda a evitar posibles problemas o a solucionar los existentes.</span><span class="sxs-lookup"><span data-stu-id="61aba-107">It also helps you to stave off potential problems or troubleshoot past ones.</span></span> <span data-ttu-id="61aba-108">Además, puede usar datos de supervisión para obtener un conocimiento más profundo sobre su aplicación.</span><span class="sxs-lookup"><span data-stu-id="61aba-108">In addition, you can use monitoring data to gain deep insights about your application.</span></span> <span data-ttu-id="61aba-109">Este conocimiento puede ayudarle a mejorar el rendimiento o mantenimiento de la aplicación, o a automatizar acciones que de lo contrario requerirían intervención manual.</span><span class="sxs-lookup"><span data-stu-id="61aba-109">That knowledge can help you to improve application performance or maintainability, or automate actions that would otherwise require manual intervention.</span></span>
 
-<span data-ttu-id="5e34b-110">Más información sobre [Azure Monitor](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor).</span><span class="sxs-lookup"><span data-stu-id="5e34b-110">Learn more about Azure Monitor [here](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor).</span></span> 
+<span data-ttu-id="61aba-110">Más información sobre [Azure Monitor](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor).</span><span class="sxs-lookup"><span data-stu-id="61aba-110">Learn more about Azure Monitor [here](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor).</span></span> 
 
-## <a name="installation"></a><span data-ttu-id="5e34b-111">Instalación</span><span class="sxs-lookup"><span data-stu-id="5e34b-111">Installation</span></span>
+## <a name="installation"></a><span data-ttu-id="61aba-111">Instalación</span><span class="sxs-lookup"><span data-stu-id="61aba-111">Installation</span></span>
 ```bash
 pip install azure-mgmt-monitor
 ```
 
-## <a name="example---metrics"></a><span data-ttu-id="5e34b-112">Ejemplo: métricas</span><span class="sxs-lookup"><span data-stu-id="5e34b-112">Example - Metrics</span></span>
-<span data-ttu-id="5e34b-113">Este ejemplo obtiene las métricas de un recurso en Azure (máquinas virtuales, etc.).</span><span class="sxs-lookup"><span data-stu-id="5e34b-113">This sample obtains the metrics of a resource on Azure (VMs, etc.).</span></span> <span data-ttu-id="5e34b-114">Este ejemplo requiere al menos la versión 0.4.0 del paquete de Python.</span><span class="sxs-lookup"><span data-stu-id="5e34b-114">This sample requires version 0.4.0 of the Python package at least.</span></span>
+## <a name="example---metrics"></a><span data-ttu-id="61aba-112">Ejemplo: métricas</span><span class="sxs-lookup"><span data-stu-id="61aba-112">Example - Metrics</span></span>
+<span data-ttu-id="61aba-113">Este ejemplo obtiene las métricas de un recurso en Azure (máquinas virtuales, etc.).</span><span class="sxs-lookup"><span data-stu-id="61aba-113">This sample obtains the metrics of a resource on Azure (VMs, etc.).</span></span> <span data-ttu-id="61aba-114">Este ejemplo requiere al menos la versión 0.4.0 del paquete de Python.</span><span class="sxs-lookup"><span data-stu-id="61aba-114">This sample requires version 0.4.0 of the Python package at least.</span></span>
 
-<span data-ttu-id="5e34b-115">[Esta es la lista completa](https://msdn.microsoft.com/library/azure/mt743622.aspx) de las palabras clave disponibles para los filtros.</span><span class="sxs-lookup"><span data-stu-id="5e34b-115">A complete list of available keywords for filters is available [here](https://msdn.microsoft.com/library/azure/mt743622.aspx).</span></span>
+<span data-ttu-id="61aba-115">[Esta es la lista completa](https://msdn.microsoft.com/library/azure/mt743622.aspx) de las palabras clave disponibles para los filtros.</span><span class="sxs-lookup"><span data-stu-id="61aba-115">A complete list of available keywords for filters is available [here](https://msdn.microsoft.com/library/azure/mt743622.aspx).</span></span>
 
-<span data-ttu-id="5e34b-116">[Estas son las métricas](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-supported-metrics) admitidas por tipo de recurso que hay disponibles.</span><span class="sxs-lookup"><span data-stu-id="5e34b-116">Supported metrics per resource type is available [here](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-supported-metrics).</span></span>
+<span data-ttu-id="61aba-116">[Estas son las métricas](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-supported-metrics) admitidas por tipo de recurso que hay disponibles.</span><span class="sxs-lookup"><span data-stu-id="61aba-116">Supported metrics per resource type is available [here](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-supported-metrics).</span></span>
 
 ```python
 import datetime
@@ -107,10 +107,10 @@ for item in metrics_data.value:
 # 2016-11-16 07:00:00+00:00: 45.4
 ```
 
-## <a name="example---alerts"></a><span data-ttu-id="5e34b-117">Ejemplo: alertas</span><span class="sxs-lookup"><span data-stu-id="5e34b-117">Example - Alerts</span></span>
-<span data-ttu-id="5e34b-118">Este ejemplo muestra cómo configurar automáticamente las alertas en los recursos cuando se crean para asegurarse de que todos los recursos se supervisan correctamente.</span><span class="sxs-lookup"><span data-stu-id="5e34b-118">This example shows how to automatically set up alerts on your resources when they are created to ensure that all resources are monitored correctly.</span></span>
+## <a name="example---alerts"></a><span data-ttu-id="61aba-117">Ejemplo: alertas</span><span class="sxs-lookup"><span data-stu-id="61aba-117">Example - Alerts</span></span>
+<span data-ttu-id="61aba-118">Este ejemplo muestra cómo configurar automáticamente las alertas en los recursos cuando se crean para asegurarse de que todos los recursos se supervisan correctamente.</span><span class="sxs-lookup"><span data-stu-id="61aba-118">This example shows how to automatically set up alerts on your resources when they are created to ensure that all resources are monitored correctly.</span></span>
 
-<span data-ttu-id="5e34b-119">Cree un origen de datos en una máquina virtual para que le alerte sobre el uso de la CPU:</span><span class="sxs-lookup"><span data-stu-id="5e34b-119">Create a data source on a VM to alert on CPU usage:</span></span>
+<span data-ttu-id="61aba-119">Cree un origen de datos en una máquina virtual para que le alerte sobre el uso de la CPU:</span><span class="sxs-lookup"><span data-stu-id="61aba-119">Create a data source on a VM to alert on CPU usage:</span></span>
 ```python
 from azure.mgmt.monitor import MonitorMgmtClient
 from azure.mgmt.monitor.models import RuleMetricDataSource
@@ -133,7 +133,7 @@ data_source = RuleMetricDataSource(
     metric_name = 'Percentage CPU'
 )
 ```
-<span data-ttu-id="5e34b-120">Cree una condición de umbral que se desencadenará cuando el uso medio de la CPU de una máquina virtual durante los últimos 5 minutos sea superior al 90 % (con el origen de datos anterior):</span><span class="sxs-lookup"><span data-stu-id="5e34b-120">Create a threshold condition that triggers when the average CPU usage of a VM for the last 5 minutes is above 90% (using the preceding data source):</span></span>
+<span data-ttu-id="61aba-120">Cree una condición de umbral que se desencadenará cuando el uso medio de la CPU de una máquina virtual durante los últimos 5 minutos sea superior al 90 % (con el origen de datos anterior):</span><span class="sxs-lookup"><span data-stu-id="61aba-120">Create a threshold condition that triggers when the average CPU usage of a VM for the last 5 minutes is above 90% (using the preceding data source):</span></span>
 ```python
 from azure.mgmt.monitor.models import ThresholdRuleCondition
 
@@ -147,7 +147,7 @@ rule_condition = ThresholdRuleCondition(
 )
 ```
 
-<span data-ttu-id="5e34b-121">Cree una acción de correo electrónico:</span><span class="sxs-lookup"><span data-stu-id="5e34b-121">Create an email action:</span></span>
+<span data-ttu-id="61aba-121">Cree una acción de correo electrónico:</span><span class="sxs-lookup"><span data-stu-id="61aba-121">Create an email action:</span></span>
 ```python
 from azure.mgmt.monitor.models import RuleEmailAction
 
@@ -160,7 +160,7 @@ rule_action = RuleEmailAction(
 )
 ```
 
-<span data-ttu-id="5e34b-122">Cree la regla:</span><span class="sxs-lookup"><span data-stu-id="5e34b-122">Create the alert:</span></span>
+<span data-ttu-id="61aba-122">Cree la regla:</span><span class="sxs-lookup"><span data-stu-id="61aba-122">Create the alert:</span></span>
 ```python
 rule_name = 'MyPyTestAlertRule'
 my_alert = client.alert_rules.create_or_update(
@@ -179,4 +179,4 @@ my_alert = client.alert_rules.create_or_update(
 )
 ```
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="5e34b-123">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="5e34b-123">Explore the Management APIs</span></span>](/python/api/overview/azure/monitoring/management)
+> [<span data-ttu-id="61aba-123">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="61aba-123">Explore the Management APIs</span></span>](/python/api/overview/azure/monitoring/management)
