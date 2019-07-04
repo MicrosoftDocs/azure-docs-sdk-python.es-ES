@@ -3,7 +3,7 @@ title: Instalación
 description: Cómo instalar Azure SDK para Python
 keywords: Azure, Python, SDK, API
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 06/05/2017
 ms.topic: install
@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 6014937fb41d6074e94578ccc47c30eb7b3f63d2
-ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
+ms.openlocfilehash: 478118642122d7c0c80b1ddf37b13f71d8ca3adc
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66376875"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534458"
 ---
 # <a name="installation"></a>Instalación
 
@@ -77,3 +77,24 @@ git clone git://github.com/Azure/azure-sdk-for-python.git
 cd azure-sdk-for-python
 python setup.py install
 ```
+
+## <a name="install-an-older-version-with-pip"></a>Instalar una versión anterior con pip
+Puede instalar una versión anterior de `azure` especificando los detalles de la versión "azure==3.0.0".
+```bash
+pip install azure==3.0.0 
+```
+## <a name="check-sdk-installation-details-with-pip"></a>Comprobar la información de la instalación del SDK con pip
+Puede consultar la ubicación de la instalación y la versión del SDK `azure`, entre otra información.
+```bash
+pip show azure # Show installed version, location details etc.
+pip freeze     # Output installed packages in requirements format.
+pip list       # List installed packages, including editables.
+```
+## <a name="to-uninstall-with-pip"></a>Para desinstalar con pip
+También puede desinstalar todas las bibliotecas de Azure en una sola línea con el metapaquete `azure`.
+```bash
+pip uninstall azure 
+```
+> [!NOTE]
+> `pip uninstall azure`Quita el metapaquete `azure` pero deja los paquetes `azure-*` individuales (y otros, como `adal` y `msrest`). Un aspecto de Python y pip es que, para todos los paquetes que tienen dependencias, al desinstalar el paquete inicial no se desinstalan las dependencias. Para quitar `azure-` y sus paquetes complementarios, ejecute el comando `pip freeze | grep 'azure-' | xargs pip uninstall -y` (y realice desinstalaciones individuales de adal, msrest y msrestazure).
+
