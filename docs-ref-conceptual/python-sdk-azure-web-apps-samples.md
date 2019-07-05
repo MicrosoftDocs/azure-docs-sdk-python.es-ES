@@ -3,7 +3,7 @@ title: 'Bibliotecas de administración de Azure para Python: ejemplos de aplicac
 description: Obtenga código de ejemplo para la creación y actualización de aplicaciones web de Azure hospedadas en App Service mediante las bibliotecas de administración de Azure para Python.
 keywords: Azure, Java, SDK, API, aplicaciones web, app service
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 06/05/2017
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology: azure
 ms.devlang: python
 ms.service: multiple
 ms.assetid: ''
-ms.openlocfilehash: 64ca5c673366f641ffd66fccb88750c32a4fad38
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: fc9ce879f12bc00270eab3b210d1184b1a81fe67
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2017
-ms.locfileid: "20909028"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534388"
 ---
 # <a name="azure-management-libraries-for-python-samples-for-web-apps"></a>Bibliotecas de administración de Azure para Python: ejemplos de aplicaciones web
 

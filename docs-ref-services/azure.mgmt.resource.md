@@ -3,7 +3,7 @@ title: Bibliotecas de Azure Resources para Python
 description: ''
 keywords: Azure, Python, SDK, API, Resources
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 06/19/2017
 ms.topic: article
@@ -11,21 +11,21 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: resources
-ms.openlocfilehash: 32e13bee27db091f0bca12c7d9ae4fc62165f4c0
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: d708a5e7296b166b6e55b9b7b0d995e72e264267
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2017
-ms.locfileid: "20909398"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534377"
 ---
 # <a name="azure-resources-libraries-for-python"></a>Bibliotecas de Azure Resources para Python 
 
 ## <a name="overview"></a>Información general 
 Administración de recursos de Azure en grupos de recursos
 
-| Paquete  |  Descripción |
+| Paquete  |  DESCRIPCIÓN |
 |---|---|
-|[Azure.Mgmt.Resource.Features][1]|El Control de exposición de características de Azure (AFEC) proporciona a los proveedores de recursos un mecanismo para controlar la exposición de característica a los usuarios.|
+|[azure.mgmt.resource.features][1]|El Control de exposición de características de Azure (AFEC) proporciona a los proveedores de recursos un mecanismo para controlar la exposición de característica a los usuarios.|
 |[azure.mgmt.resource.links][2]|Los recursos de Azure se pueden vincular entre sí para formar relaciones lógicas. Puede establecer vínculos entre recursos que pertenecen a distintos grupos de recursos.|
 |[azure.mgmt.resource.locks][3]|Los recursos de Azure se pueden bloquear para impedir que otros usuarios de su organización los eliminen o modifiquen.|
 |[azure.mgmt.resource.managedapplications][4]|Aplicaciones administradas de ARM.|
